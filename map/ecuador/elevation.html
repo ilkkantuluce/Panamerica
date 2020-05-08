@@ -1,0 +1,269 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../home-img/iconlogo.ico" />
+
+    <title>Ecuador</title>
+    <style>
+        body {
+            background-image: url('../img_map/background.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: black !important;
+            font-family: Comic Sans MS !important;
+            font-size: 16px !important;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        @media screen and (min-width: 1490px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        .Stil1 {
+            font-family: "Courier New", Courier, mono;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .portrait {
+            display: block;
+        }
+        
+        .men {
+            display: block;
+        }
+        
+        .reports {
+            margin-bottom: 95px;
+        }
+        
+        @media screen and (max-width: 790px) {
+            .portrait {
+                display: inline;
+            }
+            .topnav {
+                display: inline;
+            }
+            .reports {
+                margin-bottom: 50px;
+            }
+        }
+        
+        .menu {
+            margin-top: 50px;
+        }
+        
+        area:link,
+        area:hover,
+        area:active,
+        area:focus {
+            outline: none;
+        }
+        
+        .wrap {
+            width: 772px !important;
+        }
+        
+        @media screen and (max-width: 1150px) {
+            .wrap {
+                width: auto !important;
+            }
+        }
+        
+        td img {
+            display: block;
+        }
+    </style>
+
+    <script language="JavaScript1.2" type="text/javascript">
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+
+        function MM_nbGroup(event, grpName) { //v6.0
+            var i, img, nbArr, args = MM_nbGroup.arguments;
+            if (event == "init" && args.length > 2) {
+                if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                    img.MM_init = true;
+                    img.MM_up = args[3];
+                    img.MM_dn = img.src;
+                    if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                    nbArr[nbArr.length] = img;
+                    for (i = 4; i < args.length - 1; i += 2)
+                        if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                }
+            } else if (event == "over") {
+                document.MM_nbOver = nbArr = new Array();
+                for (i = 1; i < args.length - 1; i += 3)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                        nbArr[nbArr.length] = img;
+                    }
+            } else if (event == "out") {
+                for (i = 0; i < document.MM_nbOver.length; i++) {
+                    img = document.MM_nbOver[i];
+                    img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                }
+            } else if (event == "down") {
+                nbArr = document[grpName];
+                if (nbArr)
+                    for (i = 0; i < nbArr.length; i++) {
+                        img = nbArr[i];
+                        img.src = img.MM_up;
+                        img.MM_dn = 0;
+                    }
+                document[grpName] = nbArr = new Array();
+                for (i = 2; i < args.length - 1; i += 2)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                        nbArr[nbArr.length] = img;
+                    }
+            }
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="Stil1 text-center" style="margin-top:35px; margin-bottom:35px; font-size: 40px !important; color: #E9D02D; text-shadow: 2px -3px 2px #000000;">Ecuador</h1>
+        <div class="row reports">
+            <div class="col-md-3 text-center mb-3">
+                <a class="home topnav" href="../../index.html"><img src="../img_map/home.png"></a>
+                <p class="mt-2 topnav"><img src="../img_map/bttn.fw.png" width="83" height="82" usemap="#Map" border="0">
+                    <map name="Map">
+                      <area shape="rect" coords="3,38,83,80" href="../colombia/elevation.html">
+                      <area shape="rect" coords="3,2,81,40" href="../peru/elevation.html">
+                    </map>
+                    <br><br>
+                    <a class="portrait menu" href="../ecuador.html"><img src="../img_map/photos.fw.png"></a>
+                    <a class="portrait mt-2" href="reports.html"><img src="../img_map/reports.fw.png"></a>
+                    <a class="portrait mt-2" href="elevation.html"><img src="../img_map/activeelevation.fw.png"></a>
+                </p>
+            </div>
+            <div class="col-md-8 text-center mb-3 ">
+                <div class="wrap" style="border-radius: 30px; padding: 20px; border: 12px solid black; background-color: white; -webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);">
+                    <div class="row" style="overflow: auto;" onload="MM_preloadImages('elevation/img/ecuador1_r2_c5_s6.gif','elevation/img/ecuador1_r2_c5_s8.gif','elevation/img/ecuador1_r2_c5_s7.gif','elevation/stat1.fw.png','elevation/img/ecuador1_r6_c2.gif','elevation/img/ecuador1_r3_c3_s6.gif','elevation/img/ecuador1_r3_c3.gif','elevation/img/ecuador1_r3_c3_s8.gif','elevation/img/ecuador1_r3_c3_s7.gif','elevation/img/ecuador1_r2_c5.gif');">
+
+
+
+                        <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="736">
+
+                            <tr>
+                                <td><img src="elevation/img/spacer.gif" width="93" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="26" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="147" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="272" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="106" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="54" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="38" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="1" alt="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="7"><img name="ecuador1_r1_c1" src="elevation/img/ecuador1_r1_c1.gif" width="736" height="10" id="ecuador1_r1_c1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="10" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><img name="ecuador1_r2_c1" src="elevation/img/ecuador1_r2_c1.gif" width="538" height="15" id="ecuador1_r2_c1" alt="" /></td>
+                                <td rowspan="2" colspan="2">
+                                    <img name="ecuador1_r2_c5" src="elevation/img/ecuador1_r2_c5.gif" width="160" height="298" id="ecuador1_r2_c5" usemap="#m_ecuador1_r2_c5" alt="" />
+                                </td>
+                                <td rowspan="5"><img name="ecuador1_r2_c7" src="elevation/img/ecuador1_r2_c7.gif" width="38" height="510" id="ecuador1_r2_c7" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="15" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="2"><img name="ecuador1_r3_c1" src="elevation/img/ecuador1_r3_c1.gif" width="119" height="365" id="ecuador1_r3_c1" alt="" /></td>
+                                <td rowspan="2">
+                                    <img name="ecuador1_r3_c3" src="elevation/img/ecuador1_r3_c3.gif" width="147" height="350" id="ecuador1_r3_c3" usemap="#m_ecuador1_r3_c3" alt="" />
+                                </td>
+                                <td rowspan="3"><img name="ecuador1_r3_c4" src="elevation/img/ecuador1_r3_c4.gif" width="272" height="365" id="ecuador1_r3_c4" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="283" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2"><img name="ecuador1_r4_c5" src="elevation/img/ecuador1_r4_c5.gif" width="160" height="82" id="ecuador1_r4_c5" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="67" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td><img name="ecuador1_r5_c3" src="elevation/img/ecuador1_r5_c3.gif" width="147" height="15" id="ecuador1_r5_c3" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="15" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td><img name="ecuador1_r6_c1" src="elevation/img/ecuador1_r6_c1.gif" width="93" height="130" id="ecuador1_r6_c1" alt="" /></td>
+                                <td colspan="4"><img name="ecuador1_r6_c2" src="elevation/img/ecuador1_r6_c2.gif" width="551" height="130" id="ecuador1_r6_c2" alt="" /></td>
+                                <td><img name="ecuador1_r6_c6" src="elevation/img/ecuador1_r6_c6.gif" width="54" height="130" id="ecuador1_r6_c6" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="130" alt="" /></td>
+                            </tr>
+                        </table>
+                        <map name="m_ecuador1_r2_c5" id="m_ecuador1_r2_c5">
+                    <area shape="poly" coords="5,298,24,277,32,254,74,249,103,248,102,223,101,204,118,166,126,149,129,120,151,84,134,49,142,37,156,18,160,0,146,0,136,8,123,24,114,47,125,72,127,91,116,102,110,126,108,143,90,169,90,186,82,201,84,218,86,232,68,225,52,230,29,234,14,243,7,258,4,272,2,282,0,290" href="../elevation-profiles/Elevation_Profile-Ecuador.pdf" target="_blank" alt="" onmouseout="MM_swapImage('ecuador1_r6_c2','','elevation/img/ecuador1_r6_c2.gif','ecuador1_r3_c3','','elevation/img/ecuador1_r3_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','ecuador1_r2_c5','elevation/img/ecuador1_r2_c5_s6.gif','elevation/img/ecuador1_r2_c5_s8.gif',1);MM_swapImage('ecuador1_r6_c2','','elevation/stat1.fw.png','ecuador1_r3_c3','','elevation/img/ecuador1_r3_c3_s6.gif',1);"  onclick="MM_nbGroup('down','navbar1','ecuador1_r2_c5','elevation/img/ecuador1_r2_c5_s7.gif',1);"  />
+                    </map>
+                        <map name="m_ecuador1_r3_c3" id="m_ecuador1_r3_c3">
+                    <area shape="poly" coords="12,350,21,348,19,336,15,310,26,311,24,297,27,287,34,268,38,246,34,236,39,193,41,169,43,156,53,147,50,135,75,116,88,105,88,89,82,79,94,60,119,51,131,37,141,29,143,16,147,6,143,0,126,1,123,17,126,21,114,27,108,39,96,41,82,43,79,56,68,60,65,81,70,92,74,96,55,105,43,115,34,126,30,137,34,141,26,155,26,171,23,197,20,228,20,249,16,268,11,277,5,292,0,307,1,324,4,340,7,347" href="../elevation-profiles/Elevation_Profile-Ecuador.pdf" target="_blank" alt="" onmouseout="MM_swapImage('ecuador1_r6_c2','','elevation/img/ecuador1_r6_c2.gif','ecuador1_r2_c5','','elevation/img/ecuador1_r2_c5.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','ecuador1_r3_c3','elevation/img/ecuador1_r3_c3_s6.gif','elevation/img/ecuador1_r3_c3_s8.gif',1);MM_swapImage('ecuador1_r6_c2','','elevation/stat1.fw.png','ecuador1_r2_c5','','elevation/img/ecuador1_r2_c5_s6.gif',1);"  onclick="MM_nbGroup('down','navbar1','ecuador1_r3_c3','elevation/img/ecuador1_r3_c3_s7.gif',1);"  />
+                    </map>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

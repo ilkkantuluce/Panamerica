@@ -1,0 +1,347 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../home-img/iconlogo.ico" />
+
+    <title>Peru</title>
+    <style>
+        body {
+            background-image: url('../img_map/background.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: black !important;
+            font-family: Comic Sans MS !important;
+            font-size: 16px !important;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        @media screen and (min-width: 1490px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        .Stil1 {
+            font-family: "Courier New", Courier, mono;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .portrait {
+            display: block;
+        }
+        
+        .men {
+            display: block;
+        }
+        
+        .reports {
+            margin-bottom: 95px;
+        }
+        
+        @media screen and (max-width: 790px) {
+            .portrait {
+                display: inline;
+            }
+            .topnav {
+                display: inline;
+            }
+            .reports {
+                margin-bottom: 50px;
+            }
+        }
+        
+        .menu {
+            margin-top: 50px;
+        }
+        
+        area:link,
+        area:hover,
+        area:active,
+        area:focus {
+            outline: none;
+        }
+        
+        .wrap {
+            width: 772px !important;
+        }
+        
+        @media screen and (max-width: 1150px) {
+            .wrap {
+                width: auto !important;
+            }
+        }
+        
+        td img {
+            display: block;
+        }
+    </style>
+
+    <script language="JavaScript1.2" type="text/javascript">
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+
+        function MM_nbGroup(event, grpName) { //v6.0
+            var i, img, nbArr, args = MM_nbGroup.arguments;
+            if (event == "init" && args.length > 2) {
+                if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                    img.MM_init = true;
+                    img.MM_up = args[3];
+                    img.MM_dn = img.src;
+                    if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                    nbArr[nbArr.length] = img;
+                    for (i = 4; i < args.length - 1; i += 2)
+                        if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                }
+            } else if (event == "over") {
+                document.MM_nbOver = nbArr = new Array();
+                for (i = 1; i < args.length - 1; i += 3)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                        nbArr[nbArr.length] = img;
+                    }
+            } else if (event == "out") {
+                for (i = 0; i < document.MM_nbOver.length; i++) {
+                    img = document.MM_nbOver[i];
+                    img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                }
+            } else if (event == "down") {
+                nbArr = document[grpName];
+                if (nbArr)
+                    for (i = 0; i < nbArr.length; i++) {
+                        img = nbArr[i];
+                        img.src = img.MM_up;
+                        img.MM_dn = 0;
+                    }
+                document[grpName] = nbArr = new Array();
+                for (i = 2; i < args.length - 1; i += 2)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                        nbArr[nbArr.length] = img;
+                    }
+            }
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="Stil1 text-center" style="margin-top:35px; margin-bottom:35px; font-size: 40px !important; color: #E9D02D; text-shadow: 2px -3px 2px #000000;">Peru</h1>
+        <div class="row reports">
+            <div class="col-md-3 text-center mb-3">
+                <a class="home topnav" href="../../index.html"><img src="../img_map/home.png"></a>
+                <p class="mt-2 topnav"><img src="../img_map/bttn.fw.png" width="83" height="82" usemap="#Map" border="0">
+                    <map name="Map">
+                      <area shape="rect" coords="3,38,83,80" href="../ecuador/elevation.html">
+                      <area shape="rect" coords="3,2,81,40" href="../bolivia/elevation.html">
+                    </map>
+                    <br><br>
+                    <a class="portrait menu" href="../peru.html"><img src="../img_map/photos.fw.png"></a>
+                    <a class="portrait mt-2" href="reports.html"><img src="../img_map/reports.fw.png"></a>
+                    <a class="portrait mt-2" href="elevation.html"><img src="../img_map/activeelevation.fw.png"></a>
+                </p>
+            </div>
+            <div class="col-md-8 text-center mb-3 ">
+                <div class="wrap" style="border-radius: 30px; padding: 20px; border: 12px solid black; background-color: white; -webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);">
+                    <div class="row" style="overflow: auto;" onload="MM_preloadImages('elevation/img/peru1_r2_c7_s6.gif','elevation/img/peru1_r2_c7_s8.gif','elevation/img/peru1_r2_c7_s7.gif','elevation/img/peru1_r6_c4_s6.gif','elevation/img/peru1_r6_c4.gif','elevation/stat2.fw.png','elevation/img/peru1_r12_c3.gif','elevation/img/peru1_r3_c2_s6.gif','elevation/img/peru1_r3_c2_s8.gif','elevation/img/peru1_r6_c2_s6.gif','elevation/img/peru1_r6_c2_s8.gif','elevation/img/peru1_r3_c2_s7.gif','elevation/img/peru1_r6_c2_s7.gif','elevation/stat1.fw.png','elevation/img/peru1_r4_c8_s6.gif','elevation/img/peru1_r4_c8_s8.gif','elevation/img/peru1_r5_c8_s6.gif','elevation/img/peru1_r5_c8_s8.gif','elevation/img/peru1_r4_c8_s7.gif','elevation/img/peru1_r5_c8_s7.gif','elevation/stat3.fw.png','elevation/img/peru1_r5_c10_s6.gif','elevation/img/peru1_r5_c10_s8.gif','elevation/img/peru1_r8_c10_s6.gif','elevation/img/peru1_r8_c10_s8.gif','elevation/img/peru1_r8_c14_s6.gif','elevation/img/peru1_r8_c14_s8.gif','elevation/img/peru1_r5_c10_s7.gif','elevation/img/peru1_r8_c10_s7.gif','elevation/img/peru1_r8_c14_s7.gif','elevation/stat4.fw.png','elevation/img/peru1_r6_c4_s8.gif','elevation/img/peru1_r6_c4_s7.gif','elevation/img/peru1_r2_c7.gif','elevation/img/peru1_r8_c12_s6.gif','elevation/img/peru1_r8_c12_s8.gif','elevation/img/peru1_r8_c12_s7.gif','elevation/stat5.fw.png');">
+
+
+                        <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="736">
+
+                            <tr>
+                                <td><img src="elevation/img/spacer.gif" width="35" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="57" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="9" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="10" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="151" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="85" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="51" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="7" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="156" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="8" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="73" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="5" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="60" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="28" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="1" alt="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="15"><img name="peru1_r1_c1" src="elevation/img/peru1_r1_c1.gif" width="736" height="12" id="peru1_r1_c1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="12" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"><img name="peru1_r2_c1" src="elevation/img/peru1_r2_c1.gif" width="347" height="9" id="peru1_r2_c1" alt="" /></td>
+                                <td rowspan="2" colspan="2">
+                                    <img name="peru1_r2_c7" src="elevation/img/peru1_r2_c7.gif" width="58" height="104" id="peru1_r2_c7" usemap="#m_peru1_r2_c7" alt="" />
+                                </td>
+                                <td rowspan="2" colspan="7"><img name="peru1_r2_c9" src="elevation/img/peru1_r2_c9.gif" width="331" height="104" id="peru1_r2_c9" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="9" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="10"><img name="peru1_r3_c1" src="elevation/img/peru1_r3_c1.gif" width="35" height="499" id="peru1_r3_c1" alt="" /></td>
+                                <td rowspan="3" colspan="3">
+                                    <img name="peru1_r3_c2" src="elevation/img/peru1_r3_c2.gif" width="76" height="184" id="peru1_r3_c2" usemap="#m_peru1_r3_c2" alt="" />
+                                </td>
+                                <td rowspan="3" colspan="2"><img name="peru1_r3_c5" src="elevation/img/peru1_r3_c5.gif" width="236" height="184" id="peru1_r3_c5" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="95" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="8"><img name="peru1_r4_c7" src="elevation/img/peru1_r4_c7.gif" width="51" height="274" id="peru1_r4_c7" alt="" /></td>
+                                <td colspan="3">
+                                    <img name="peru1_r4_c8" src="elevation/img/peru1_r4_c8.gif" width="171" height="64" id="peru1_r4_c8" usemap="#m_peru1_r4_c8" alt="" />
+                                </td>
+                                <td colspan="5"><img name="peru1_r4_c11" src="elevation/img/peru1_r4_c11.gif" width="167" height="64" id="peru1_r4_c11" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="64" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <img name="peru1_r5_c8" src="elevation/img/peru1_r5_c8.gif" width="163" height="25" id="peru1_r5_c8" usemap="#m_peru1_r5_c8" alt="" />
+                                </td>
+                                <td rowspan="3" colspan="5"><img name="peru1_r5_c10" src="elevation/img/peru1_r5_c10.gif" width="147" height="106" id="peru1_r5_c10" usemap="#m_peru1_r5_c10" alt="" /></td>
+                                <td rowspan="8"><img name="peru1_r5_c15" src="elevation/img/peru1_r5_c15.gif" width="28" height="340" id="peru1_r5_c15" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="25" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <img name="peru1_r6_c2" src="elevation/img/peru1_r6_c2.gif" width="66" height="11" id="peru1_r6_c2" usemap="#m_peru1_r6_c2" alt="" />
+                                </td>
+                                <td rowspan="5" colspan="2">
+                                    <img name="peru1_r6_c4" src="elevation/img/peru1_r6_c4.gif" width="161" height="169" id="peru1_r6_c4" usemap="#m_peru1_r6_c4" alt="" />
+                                </td>
+                                <td rowspan="6"><img name="peru1_r6_c6" src="elevation/img/peru1_r6_c6.gif" width="85" height="185" id="peru1_r6_c6" alt="" /></td>
+                                <td rowspan="6" colspan="2"><img name="peru1_r6_c8" src="elevation/img/peru1_r6_c8.gif" width="163" height="185" id="peru1_r6_c8" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="11" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5" colspan="2"><img name="peru1_r7_c2" src="elevation/img/peru1_r7_c2.gif" width="66" height="174" id="peru1_r7_c2" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="70" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img name="peru1_r8_c10" src="elevation/img/peru1_r8_c10.gif" width="9" height="46" id="peru1_r8_c10" usemap="#m_peru1_r8_c10" alt="" /></td>
+                                <td rowspan="2" colspan="2"><img name="peru1_r8_c12" src="elevation/img/peru1_r8_c12.gif" width="78" height="55" id="peru1_r8_c12" usemap="#m_peru1_r8_c12" alt="" /></td>
+                                <td><img name="peru1_r8_c14" src="elevation/img/peru1_r8_c14.gif" width="60" height="46" id="peru1_r8_c14" usemap="#m_peru1_r8_c14" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="46" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="2"><img name="peru1_r9_c10" src="elevation/img/peru1_r9_c10.gif" width="9" height="58" id="peru1_r9_c10" alt="" /></td>
+                                <td rowspan="4"><img name="peru1_r9_c14" src="elevation/img/peru1_r9_c14.gif" width="60" height="188" id="peru1_r9_c14" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="9" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2"><img name="peru1_r10_c12" src="elevation/img/peru1_r10_c12.gif" width="78" height="49" id="peru1_r10_c12" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="33" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img name="peru1_r11_c4" src="elevation/img/peru1_r11_c4.gif" width="161" height="16" id="peru1_r11_c4" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="16" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td><img name="peru1_r12_c2" src="elevation/img/peru1_r12_c2.gif" width="57" height="130" id="peru1_r12_c2" alt="" /></td>
+                                <td colspan="10"><img name="peru1_r12_c3" src="elevation/img/peru1_r12_c3.gif" width="551" height="130" id="peru1_r12_c3" alt="" /></td>
+                                <td><img name="peru1_r12_c13" src="elevation/img/peru1_r12_c13.gif" width="5" height="130" id="peru1_r12_c13" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="130" alt="" /></td>
+                            </tr>
+                        </table>
+                        <map name="m_peru1_r2_c7" id="m_peru1_r2_c7">
+                    <area shape="poly" coords="48,104,55,103,58,99,55,95,48,85,40,82,33,77,30,71,32,60,23,41,17,38,26,33,19,5,15,1,8,0,2,4,3,10,4,24,6,27,0,37,2,47,9,52,11,62,13,67,11,76,25,95,37,100,41,99,44,102" href="../elevation-profiles/Elevation_Profile-Peru-Trujillo_Huancayo.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r6_c4','','elevation/img/peru1_r6_c4.gif','peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r2_c7','elevation/img/peru1_r2_c7_s6.gif','elevation/img/peru1_r2_c7_s8.gif',1);MM_swapImage('peru1_r6_c4','','elevation/img/peru1_r6_c4_s6.gif','peru1_r12_c3','','elevation/stat2.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r2_c7','elevation/img/peru1_r2_c7_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r3_c2" id="m_peru1_r3_c2">
+                    <area shape="poly" coords="62,193,70,195,75,192,76,188,71,169,63,165,56,152,57,141,38,120,39,109,45,90,43,76,32,55,18,31,18,25,33,10,35,1,20,0,10,6,0,20,0,41,6,55,26,88,21,101,20,116,23,129,32,138,39,144,37,156,43,166,55,181,57,181,59,187" href="../elevation-profiles/Elevation_Profile-Peru-Ecuador_Trujillo.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r3_c2','elevation/img/peru1_r3_c2_s6.gif','elevation/img/peru1_r3_c2_s8.gif','peru1_r6_c2','elevation/img/peru1_r6_c2_s6.gif','elevation/img/peru1_r6_c2_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat1.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r3_c2','elevation/img/peru1_r3_c2_s7.gif','peru1_r6_c2','elevation/img/peru1_r6_c2_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r4_c8" id="m_peru1_r4_c8">
+                    <area shape="poly" coords="1,1,7,0,17,6,23,11,24,13,31,14,40,21,48,31,66,45,66,52,65,56,70,59,79,64,88,68,94,70,103,72,109,72,117,68,128,66,137,62,150,63,162,64,171,70,170,77,166,81,158,79,147,80,143,79,131,82,125,82,117,88,111,89,105,89,97,86,87,85,76,81,69,76,60,75,56,73,49,69,47,55,48,48,43,45,34,40,28,33,26,30,20,30,12,29,6,18,1,11,0,6" href="../elevation-profiles/Elevation_Profile-Peru-Huancayo_Cusco.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r4_c8','elevation/img/peru1_r4_c8_s6.gif','elevation/img/peru1_r4_c8_s8.gif','peru1_r5_c8','elevation/img/peru1_r5_c8_s6.gif','elevation/img/peru1_r5_c8_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat3.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r4_c8','elevation/img/peru1_r4_c8_s7.gif','peru1_r5_c8','elevation/img/peru1_r5_c8_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r5_c8" id="m_peru1_r5_c8">
+                    <area shape="poly" coords="1,-63,7,-64,17,-58,23,-53,24,-51,31,-50,40,-43,48,-33,66,-19,66,-12,65,-8,70,-5,79,0,88,4,94,6,103,8,109,8,117,4,128,2,137,-2,150,-1,162,0,171,6,170,13,166,17,158,15,147,16,143,15,131,18,125,18,117,24,111,25,105,25,97,22,87,21,76,17,69,12,60,11,56,9,49,5,47,-9,48,-16,43,-19,34,-24,28,-31,26,-34,20,-34,12,-35,6,-46,1,-53,0,-58" href="../elevation-profiles/Elevation_Profile-Peru-Huancayo_Cusco.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r4_c8','elevation/img/peru1_r4_c8_s6.gif','elevation/img/peru1_r4_c8_s8.gif','peru1_r5_c8','elevation/img/peru1_r5_c8_s6.gif','elevation/img/peru1_r5_c8_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat3.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r4_c8','elevation/img/peru1_r4_c8_s7.gif','peru1_r5_c8','elevation/img/peru1_r5_c8_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r5_c10" id="m_peru1_r5_c10">
+                    <area shape="poly" coords="115,148,142,152,147,144,146,137,132,131,115,125,102,111,96,93,84,70,68,65,64,55,57,48,48,44,42,37,37,32,28,14,21,5,7,0,0,4,1,15,9,19,15,33,20,42,30,50,37,60,49,65,52,74,69,83,76,92,83,110,89,127,99,131,110,142,128,151" href="javascript:;" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r5_c10','elevation/img/peru1_r5_c10_s6.gif','elevation/img/peru1_r5_c10_s8.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s6.gif','elevation/img/peru1_r8_c10_s8.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s6.gif','elevation/img/peru1_r8_c14_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r5_c10','elevation/img/peru1_r5_c10_s7.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s7.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s7.gif',1);"  />
+                    <area shape="poly" coords="-162,-63,-156,-64,-146,-58,-140,-53,-139,-51,-132,-50,-123,-43,-115,-33,-97,-19,-97,-12,-98,-8,-93,-5,-84,0,-75,4,-69,6,-60,8,-54,8,-46,4,-35,2,-26,-2,-13,-1,-1,0,8,6,7,13,3,17,-5,15,-16,16,-20,15,-32,18,-38,18,-46,24,-52,25,-58,25,-66,22,-76,21,-87,17,-94,12,-103,11,-107,9,-114,5,-116,-9,-115,-16,-120,-19,-129,-24,-135,-31,-137,-34,-143,-34,-151,-35,-157,-46,-162,-53,-163,-58" href="../elevation-profiles/Elevation_Profile-Peru-Huancayo_Cusco.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r4_c8','elevation/img/peru1_r4_c8_s6.gif','elevation/img/peru1_r4_c8_s8.gif','peru1_r5_c8','elevation/img/peru1_r5_c8_s6.gif','elevation/img/peru1_r5_c8_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat3.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r4_c8','elevation/img/peru1_r4_c8_s7.gif','peru1_r5_c8','elevation/img/peru1_r5_c8_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r6_c2" id="m_peru1_r6_c2">
+                    <area shape="poly" coords="62,9,70,11,75,8,76,4,71,-15,63,-19,56,-32,57,-43,38,-64,39,-75,45,-94,43,-108,32,-129,18,-153,18,-159,33,-174,35,-183,20,-184,10,-178,0,-164,0,-143,6,-129,26,-96,21,-83,20,-68,23,-55,32,-46,39,-40,37,-28,43,-18,55,-3,57,-3,59,3" href="../elevation-profiles/Elevation_Profile-Peru-Ecuador_Trujillo.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r3_c2','elevation/img/peru1_r3_c2_s6.gif','elevation/img/peru1_r3_c2_s8.gif','peru1_r6_c2','elevation/img/peru1_r6_c2_s6.gif','elevation/img/peru1_r6_c2_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat1.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r3_c2','elevation/img/peru1_r3_c2_s7.gif','peru1_r6_c2','elevation/img/peru1_r6_c2_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r6_c4" id="m_peru1_r6_c4">
+                    <area shape="poly" coords="158,169,161,156,154,136,150,103,146,91,132,80,121,66,106,69,96,77,87,76,83,60,72,39,57,24,36,24,25,19,14,3,5,0,0,3,1,11,17,35,30,46,48,43,60,63,69,77,75,91,84,98,95,107,114,98,129,100,135,108,134,119,126,127,133,142,141,148,145,158,147,161,149,164,150,168" href="../elevation-profiles/Elevation_Profile-Peru-Trujillo_Huancayo.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r2_c7','','elevation/img/peru1_r2_c7.gif','peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r6_c4','elevation/img/peru1_r6_c4_s6.gif','elevation/img/peru1_r6_c4_s8.gif',1);MM_swapImage('peru1_r2_c7','','elevation/img/peru1_r2_c7_s6.gif','peru1_r12_c3','','elevation/stat2.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r6_c4','elevation/img/peru1_r6_c4_s7.gif',1);"  />
+                    <area shape="poly" coords="-4,9,4,11,9,8,10,4,5,-15,-3,-19,-10,-32,-9,-43,-28,-64,-27,-75,-21,-94,-23,-108,-34,-129,-48,-153,-48,-159,-33,-174,-31,-183,-46,-184,-56,-178,-66,-164,-66,-143,-60,-129,-40,-96,-45,-83,-46,-68,-43,-55,-34,-46,-27,-40,-29,-28,-23,-18,-11,-3,-9,-3,-7,3" href="../elevation-profiles/Elevation_Profile-Peru-Ecuador_Trujillo.pdf" target="_blank" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r3_c2','elevation/img/peru1_r3_c2_s6.gif','elevation/img/peru1_r3_c2_s8.gif','peru1_r6_c2','elevation/img/peru1_r6_c2_s6.gif','elevation/img/peru1_r6_c2_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat1.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r3_c2','elevation/img/peru1_r3_c2_s7.gif','peru1_r6_c2','elevation/img/peru1_r6_c2_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r8_c10" id="m_peru1_r8_c10">
+                    <area shape="poly" coords="115,42,142,46,147,38,146,31,132,25,115,19,102,5,96,-13,84,-36,68,-41,64,-51,57,-58,48,-62,42,-69,37,-74,28,-92,21,-101,7,-106,0,-102,1,-91,9,-87,15,-73,20,-64,30,-56,37,-46,49,-41,52,-32,69,-23,76,-14,83,4,89,21,99,25,110,36,128,45" href="javascript:;" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r5_c10','elevation/img/peru1_r5_c10_s6.gif','elevation/img/peru1_r5_c10_s8.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s6.gif','elevation/img/peru1_r8_c10_s8.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s6.gif','elevation/img/peru1_r8_c14_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r5_c10','elevation/img/peru1_r5_c10_s7.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s7.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r8_c12" id="m_peru1_r8_c12">
+                    <area shape="poly" coords="14,55,17,44,15,38,28,30,36,24,51,24,56,21,61,15,68,14,76,10,78,7,78,3,74,0,70,0,66,1,62,1,55,3,50,7,49,9,46,10,42,11,34,11,28,12,27,16,20,19,15,21,9,26,2,32,0,35,0,42,3,47,5,52,10,55,12,54" href="javascript:;" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r8_c12','elevation/img/peru1_r8_c12_s6.gif','elevation/img/peru1_r8_c12_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat5.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r8_c12','elevation/img/peru1_r8_c12_s7.gif',1);"  />
+                    <area shape="poly" coords="106,42,133,46,138,38,137,31,123,25,106,19,93,5,87,-13,75,-36,59,-41,55,-51,48,-58,39,-62,33,-69,28,-74,19,-92,12,-101,-2,-106,-9,-102,-8,-91,0,-87,6,-73,11,-64,21,-56,28,-46,40,-41,43,-32,60,-23,67,-14,74,4,80,21,90,25,101,36,119,45" href="javascript:;" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r5_c10','elevation/img/peru1_r5_c10_s6.gif','elevation/img/peru1_r5_c10_s8.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s6.gif','elevation/img/peru1_r8_c10_s8.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s6.gif','elevation/img/peru1_r8_c14_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r5_c10','elevation/img/peru1_r5_c10_s7.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s7.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s7.gif',1);"  />
+                    </map>
+                        <map name="m_peru1_r8_c14" id="m_peru1_r8_c14">
+                    <area shape="poly" coords="28,42,55,46,60,38,59,31,45,25,28,19,15,5,9,-13,-3,-36,-19,-41,-23,-51,-30,-58,-39,-62,-45,-69,-50,-74,-59,-92,-66,-101,-80,-106,-87,-102,-86,-91,-78,-87,-72,-73,-67,-64,-57,-56,-50,-46,-38,-41,-35,-32,-18,-23,-11,-14,-4,4,2,21,12,25,23,36,41,45" href="javascript:;" alt="" onmouseout="MM_swapImage('peru1_r12_c3','','elevation/img/peru1_r12_c3.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','peru1_r5_c10','elevation/img/peru1_r5_c10_s6.gif','elevation/img/peru1_r5_c10_s8.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s6.gif','elevation/img/peru1_r8_c10_s8.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s6.gif','elevation/img/peru1_r8_c14_s8.gif',1);MM_swapImage('peru1_r12_c3','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','peru1_r5_c10','elevation/img/peru1_r5_c10_s7.gif','peru1_r8_c10','elevation/img/peru1_r8_c10_s7.gif','peru1_r8_c14','elevation/img/peru1_r8_c14_s7.gif',1);"  />
+                    </map>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

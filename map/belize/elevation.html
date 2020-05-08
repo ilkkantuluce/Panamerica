@@ -1,0 +1,269 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../home-img/iconlogo.ico" />
+
+    <title>Belize</title>
+    <style>
+        body {
+            background-image: url('../img_map/background.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: black !important;
+            font-family: Comic Sans MS !important;
+            font-size: 16px !important;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        @media screen and (min-width: 1490px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        .Stil1 {
+            font-family: "Courier New", Courier, mono;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .portrait {
+            display: block;
+        }
+        
+        .men {
+            display: block;
+        }
+        
+        .reports {
+            margin-bottom: 95px;
+        }
+        
+        @media screen and (max-width: 790px) {
+            .portrait {
+                display: inline;
+            }
+            .topnav {
+                display: inline;
+            }
+            .reports {
+                margin-bottom: 50px;
+            }
+        }
+        
+        .menu {
+            margin-top: 50px;
+        }
+        
+        area:link,
+        area:hover,
+        area:active,
+        area:focus {
+            outline: none;
+        }
+        
+        .wrap {
+            width: 773px !important;
+        }
+        
+        @media screen and (max-width: 1150px) {
+            .wrap {
+                width: auto !important;
+            }
+        }
+        
+        td img {
+            display: block;
+        }
+    </style>
+
+    <script language="JavaScript1.2" type="text/javascript">
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+
+        function MM_nbGroup(event, grpName) { //v6.0
+            var i, img, nbArr, args = MM_nbGroup.arguments;
+            if (event == "init" && args.length > 2) {
+                if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                    img.MM_init = true;
+                    img.MM_up = args[3];
+                    img.MM_dn = img.src;
+                    if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                    nbArr[nbArr.length] = img;
+                    for (i = 4; i < args.length - 1; i += 2)
+                        if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                }
+            } else if (event == "over") {
+                document.MM_nbOver = nbArr = new Array();
+                for (i = 1; i < args.length - 1; i += 3)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                        nbArr[nbArr.length] = img;
+                    }
+            } else if (event == "out") {
+                for (i = 0; i < document.MM_nbOver.length; i++) {
+                    img = document.MM_nbOver[i];
+                    img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                }
+            } else if (event == "down") {
+                nbArr = document[grpName];
+                if (nbArr)
+                    for (i = 0; i < nbArr.length; i++) {
+                        img = nbArr[i];
+                        img.src = img.MM_up;
+                        img.MM_dn = 0;
+                    }
+                document[grpName] = nbArr = new Array();
+                for (i = 2; i < args.length - 1; i += 2)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                        nbArr[nbArr.length] = img;
+                    }
+            }
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="Stil1 text-center" style="margin-top:35px; margin-bottom:35px; font-size: 40px !important; color: #E9D02D; text-shadow: 2px -3px 2px #000000;">Belize</h1>
+        <div class="row reports">
+            <div class="col-md-3 text-center mb-3">
+                <a class="home topnav" href="../../index.html"><img src="../img_map/home.png"></a>
+                <p class="mt-2 topnav"><img src="../img_map/bttn.fw.png" width="83" height="82" usemap="#Map" border="0">
+                    <map name="Map">
+                      <area shape="rect" coords="3,38,83,80" href="../mexico/elevation.html">
+                      <area shape="rect" coords="3,2,81,40" href="../guatemala/elevation.html">
+                    </map>
+                    <br><br>
+                    <a class="portrait menu" href="../belize.html"><img src="../img_map/photos.fw.png"></a>
+                    <a class="portrait mt-2" href="reports.html"><img src="../img_map/reports.fw.png"></a>
+                    <a class="portrait mt-2" href="elevation.html"><img src="../img_map/activeelevation.fw.png"></a>
+                </p>
+            </div>
+            <div class="col-md-8 text-center mb-3 ">
+                <div class="wrap" style="border-radius: 30px; padding: 20px; border: 12px solid black; background-color: white; -webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);">
+                    <div class="row" style="overflow: auto;" onload="MM_preloadImages('elevation/img/belize1_r2_c5_s6.gif','elevation/img/belize1_r2_c5_s8.gif','elevation/img/belize1_r2_c5_s7.gif','elevation/stat1.fw.png','elevation/img/belize1_r6_c3.gif','elevation/img/belize1_r3_c2_s6.gif','elevation/img/belize1_r3_c2.gif','elevation/img/belize1_r3_c2_s8.gif','elevation/img/belize1_r3_c2_s7.gif','elevation/img/belize1_r2_c5.gif');">
+
+
+                        <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="738">
+
+                            <tr>
+                                <td><img src="elevation/img/spacer.gif" width="17" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="77" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="256" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="143" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="152" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="50" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="43" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="1" alt="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="7"><img name="belize1_r1_c1" src="elevation/img/belize1_r1_c1.gif" width="738" height="9" id="belize1_r1_c1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="9" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><img name="belize1_r2_c1" src="elevation/img/belize1_r2_c1.gif" width="493" height="15" id="belize1_r2_c1" alt="" /></td>
+                                <td rowspan="2" colspan="2">
+                                    <img name="belize1_r2_c5" src="elevation/img/belize1_r2_c5.gif" width="202" height="241" id="belize1_r2_c5" usemap="#m_belize1_r2_c5" alt="" />
+                                </td>
+                                <td rowspan="5"><img name="belize1_r2_c7" src="elevation/img/belize1_r2_c7.gif" width="43" height="511" id="belize1_r2_c7" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="15" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4"><img name="belize1_r3_c1" src="elevation/img/belize1_r3_c1.gif" width="17" height="496" id="belize1_r3_c1" alt="" /></td>
+                                <td rowspan="2" colspan="2">
+                                    <img name="belize1_r3_c2" src="elevation/img/belize1_r3_c2.gif" width="333" height="351" id="belize1_r3_c2" usemap="#m_belize1_r3_c2" alt="" />
+                                </td>
+                                <td rowspan="3"><img name="belize1_r3_c4" src="elevation/img/belize1_r3_c4.gif" width="143" height="366" id="belize1_r3_c4" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="226" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2"><img name="belize1_r4_c5" src="elevation/img/belize1_r4_c5.gif" width="202" height="140" id="belize1_r4_c5" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="125" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img name="belize1_r5_c2" src="elevation/img/belize1_r5_c2.gif" width="333" height="15" id="belize1_r5_c2" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="15" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td><img name="belize1_r6_c2" src="elevation/img/belize1_r6_c2.gif" width="77" height="130" id="belize1_r6_c2" alt="" /></td>
+                                <td colspan="3"><img name="belize1_r6_c3" src="elevation/img/belize1_r6_c3.gif" width="551" height="130" id="belize1_r6_c3" alt="" /></td>
+                                <td><img name="belize1_r6_c6" src="elevation/img/belize1_r6_c6.gif" width="50" height="130" id="belize1_r6_c6" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="130" alt="" /></td>
+                            </tr>
+                        </table>
+                        <map name="m_belize1_r2_c5" id="m_belize1_r2_c5">
+                    <area shape="poly" coords="49,241,64,240,65,229,52,225,38,213,24,205,18,193,21,187,29,171,54,160,68,147,69,141,70,133,91,113,90,107,99,100,120,101,144,95,149,87,168,95,180,88,185,78,186,70,174,61,168,53,175,47,178,34,194,24,202,10,199,2,188,0,186,9,169,23,161,35,154,60,156,68,142,72,135,76,126,82,112,87,97,82,83,89,72,103,71,113,59,121,53,135,46,147,32,153,20,156,16,167,14,173,0,185,3,200,9,211,23,225,35,232,42,237" href="../elevation-profiles/Elevation_Profile-Belize.pdf" target="_blank" alt="" onmouseout="MM_swapImage('belize1_r6_c3','','elevation/img/belize1_r6_c3.gif','belize1_r3_c2','','elevation/img/belize1_r3_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','belize1_r2_c5','elevation/img/belize1_r2_c5_s6.gif','elevation/img/belize1_r2_c5_s8.gif',1);MM_swapImage('belize1_r6_c3','','elevation/stat1.fw.png','belize1_r3_c2','','elevation/img/belize1_r3_c2_s6.gif',1);"  onclick="MM_nbGroup('down','navbar1','belize1_r2_c5','elevation/img/belize1_r2_c5_s7.gif',1);"  />
+                    </map>
+                        <map name="m_belize1_r3_c2" id="m_belize1_r3_c2">
+                    <area shape="poly" coords="135,351,163,325,172,313,225,313,227,303,254,303,258,288,244,274,247,249,271,233,282,217,297,188,305,163,308,140,320,132,333,122,328,109,310,103,292,103,256,97,227,79,198,57,185,45,157,45,140,0,123,5,113,13,81,17,65,29,45,32,27,41,11,64,4,82,0,92,7,97,16,99,36,60,63,49,97,35,129,25,135,39,152,64,175,63,203,91,234,107,261,118,278,123,293,125,291,139,281,172,271,198,263,214,241,237,230,243,228,265,231,280,235,288,221,282,207,293,189,297,163,297,150,310,136,321,131,336,130,346" href="../elevation-profiles/Elevation_Profile-Belize.pdf" target="_blank" alt="" onmouseout="MM_swapImage('belize1_r6_c3','','elevation/img/belize1_r6_c3.gif','belize1_r2_c5','','elevation/img/belize1_r2_c5.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','belize1_r3_c2','elevation/img/belize1_r3_c2_s6.gif','elevation/img/belize1_r3_c2_s8.gif',1);MM_swapImage('belize1_r6_c3','','elevation/stat1.fw.png','belize1_r2_c5','','elevation/img/belize1_r2_c5_s6.gif',1);"  onclick="MM_nbGroup('down','navbar1','belize1_r3_c2','elevation/img/belize1_r3_c2_s7.gif',1);"  />
+                    </map>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

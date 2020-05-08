@@ -1,0 +1,520 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="home-img/iconlogo.ico" />
+
+    <title>Panamericana On A Recumbent Bike</title>
+
+
+    <script language="JavaScript1.2" type="text/javascript">
+        function MM_findObj(n, d) {
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_nbGroup(event, grpName) {
+            var i, img, nbArr, args = MM_nbGroup.arguments;
+            if (event == "init" && args.length > 2) {
+                if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                    img.MM_init = true;
+                    img.MM_up = args[3];
+                    img.MM_dn = img.src;
+                    if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                    nbArr[nbArr.length] = img;
+                    for (i = 4; i < args.length - 1; i += 2)
+                        if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                }
+            } else if (event == "over") {
+                document.MM_nbOver = nbArr = new Array();
+                for (i = 1; i < args.length - 1; i += 3)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                        nbArr[nbArr.length] = img;
+                    }
+            } else if (event == "out") {
+                for (i = 0; i < document.MM_nbOver.length; i++) {
+                    img = document.MM_nbOver[i];
+                    img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                }
+            } else if (event == "down") {
+                nbArr = document[grpName];
+                if (nbArr)
+                    for (i = 0; i < nbArr.length; i++) {
+                        img = nbArr[i];
+                        img.src = img.MM_up;
+                        img.MM_dn = 0;
+                    }
+                document[grpName] = nbArr = new Array();
+                for (i = 2; i < args.length - 1; i += 2)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                        nbArr[nbArr.length] = img;
+                    }
+            }
+        }
+
+        function MM_preloadImages() {
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+    </script>
+
+</head>
+
+<style>
+    body {
+        background-color: #D36C00;
+    }
+    
+    .Stil1 {
+        font-family: "Courier New", Courier, mono;
+        font-size: 36px;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .Stil2 {
+        font-family: "Courier New", Courier, mono;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        margin-top: 50px;
+    }
+    
+    td img {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    .midmobile {
+        display: none;
+    }
+    
+    .dates {
+        margin-top: 200px;
+    }
+    
+    @media screen and (max-width: 990px) {
+        .dates {
+            margin-top: 5px;
+        }
+        .Stil2 {
+            margin-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .midmobile {
+            display: block;
+        }
+        .mobile {
+            display: none;
+        }
+        .desktop {
+            display: none;
+        }
+        .dates {
+            margin-top: 5px;
+        }
+        .Stil2 {
+            margin-top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 333px) {
+        .mobile {
+            display: block;
+        }
+        .midmobile {
+            display: none;
+        }
+    }
+    
+    area:link,
+    area:hover,
+    area:active,
+    area:focus {
+        outline: none;
+    }
+</style>
+
+<body background="#D36C00">
+    <h3 class="text-center Stil1 mt-4">PANAMERICANA ON A RECUMBENT BIKE</h3>
+
+    <div class="container text-center Stil2">
+        <div class="row">
+            <div class="col-lg-3 mt-2 mb-2">
+                <p class="dates">Start date: 12 June 2007 in Anchorage, Alaska</p>
+            </div>
+
+            <div class="col-lg-6 mt-2 mb-2">
+
+                <!----desktop starts---->
+
+                <div class="desktop" onload="MM_preloadImages('desktop/desktop_r2_c5_s6.gif','desktop/desktop_r2_c5_s8.gif','desktop/desktop_r2_c5_s7.gif','desktop/desktop_r3_c3_s6.gif','desktop/desktop_r3_c3_s8.gif','desktop/desktop_r3_c3_s7.gif','desktop/desktop_r7_c4_s6.gif','desktop/desktop_r7_c4_s8.gif','desktop/desktop_r9_c5_s6.gif','desktop/desktop_r9_c5_s8.gif','desktop/desktop_r7_c4_s7.gif','desktop/desktop_r9_c5_s7.gif','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif','desktop/desktop_r4_c2_s7.gif','desktop/desktop_r5_c3_s7.gif','desktop/desktop_r7_c3_s7.gif','desktop/desktop_r9_c7_s6.gif','desktop/desktop_r9_c7_s8.gif','desktop/desktop_r10_c6_s6.gif','desktop/desktop_r10_c6_s8.gif','desktop/desktop_r9_c7_s7.gif','desktop/desktop_r10_c6_s7.gif');">
+                    <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="452">
+
+                        <tr>
+                            <td><img src="desktop/spacer.gif" width="30" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="8" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="19" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="76" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="44" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="48" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="100" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="91" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="36" height="1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="9"><img name="desktop_r1_c1" src="desktop/desktop_r1_c1.gif" width="452" height="31" id="desktop_r1_c1" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="31" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><img name="desktop_r2_c1" src="desktop/desktop_r2_c1.gif" width="133" height="26" id="desktop_r2_c1" alt="" /></td>
+                            <td rowspan="7" colspan="4"><img name="desktop_r2_c5" src="desktop/desktop_r2_c5.gif" width="283" height="362" id="desktop_r2_c5" usemap="#m_desktop_r2_c5" alt="" /></td>
+                            <td rowspan="10"><img name="desktop_r2_c9" src="desktop/desktop_r2_c9.gif" width="36" height="417" id="desktop_r2_c9" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="26" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="desktop_r3_c1" src="desktop/desktop_r3_c1.gif" width="38" height="119" id="desktop_r3_c1" alt="" /></td>
+                            <td rowspan="2" colspan="2"><img name="desktop_r3_c3" src="desktop/desktop_r3_c3.gif" width="95" height="168" id="desktop_r3_c3" usemap="#m_desktop_r3_c3" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="119" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8"><img name="desktop_r4_c1" src="desktop/desktop_r4_c1.gif" width="30" height="272" id="desktop_r4_c1" alt="" /></td>
+                            <td rowspan="4"><img name="desktop_r4_c2" src="desktop/desktop_r4_c2.gif" width="8" height="148" id="desktop_r4_c2" usemap="#m_desktop_r4_c2" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="49" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2"><img name="desktop_r5_c3" src="desktop/desktop_r5_c3.gif" width="95" height="2" id="desktop_r5_c3" usemap="#m_desktop_r5_c3" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="desktop/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img name="desktop_r7_c3" src="desktop/desktop_r7_c3.gif" width="19" height="97" id="desktop_r7_c3" usemap="#m_desktop_r7_c3" alt="" /></td>
+                            <td rowspan="3"><img name="desktop_r7_c4" src="desktop/desktop_r7_c4.gif" width="76" height="187" id="desktop_r7_c4" usemap="#m_desktop_r7_c4" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="97" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" colspan="2"><img name="desktop_r8_c2" src="desktop/desktop_r8_c2.gif" width="27" height="124" id="desktop_r8_c2" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="69" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="desktop_r9_c5" src="desktop/desktop_r9_c5.gif" width="92" height="21" id="desktop_r9_c5" usemap="#m_desktop_r9_c5" alt="" /></td>
+                            <td rowspan="2"><img name="desktop_r9_c7" src="desktop/desktop_r9_c7.gif" width="100" height="28" id="desktop_r9_c7" usemap="#m_desktop_r9_c7" alt="" /></td>
+                            <td rowspan="3"><img name="desktop_r9_c8" src="desktop/desktop_r9_c8.gif" width="91" height="55" id="desktop_r9_c8" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="21" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2"><img name="desktop_r10_c4" src="desktop/desktop_r10_c4.gif" width="120" height="34" id="desktop_r10_c4" alt="" /></td>
+                            <td><img name="desktop_r10_c6" src="desktop/desktop_r10_c6.gif" width="48" height="7" id="desktop_r10_c6" usemap="#m_desktop_r10_c6" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="7" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="desktop_r11_c6" src="desktop/desktop_r11_c6.gif" width="148" height="27" id="desktop_r11_c6" alt="" /></td>
+                            <td><img src="desktop/spacer.gif" width="1" height="27" alt="" /></td>
+                        </tr>
+                    </table>
+                    <map name="m_desktop_r2_c5" id="m_desktop_r2_c5">
+                        <area shape="poly" coords="184,362,201,346,210,325,235,303,253,278,270,250,278,228,264,200,254,190,276,171,281,149,283,134,280,123,269,117,258,112,241,113,198,111,194,98,193,84,213,65,211,47,199,34,182,16,148,7,97,0,51,5,20,8,6,17,0,34,15,52,33,52,46,54,46,79,48,102,59,126,86,159,103,169,125,189,142,209,141,235,156,259,169,276,165,297,165,325,166,339,168,349,171,354,173,360" href="map/entrymap.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r2_c5','desktop/desktop_r2_c5_s6.gif','desktop/desktop_r2_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r2_c5','desktop/desktop_r2_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="92,194,-6,26,-21,35,-33,44,-44,53,-54,64,-61,74,-70,88,-75,97,-82,111,-88,126,-92,137,-95,146,-4,170,92,194" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r3_c3','desktop/desktop_r3_c3_s6.gif','desktop/desktop_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r3_c3','desktop/desktop_r3_c3_s7.gif',1);"  />
+                        <area shape="poly" coords="92,196,-76,294,-67,309,-58,321,-49,332,-38,342,-28,349,-15,358,-5,363,8,370,24,376,35,380,44,383,67,292,92,196" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r7_c4','desktop/desktop_r7_c4_s6.gif','desktop/desktop_r7_c4_s8.gif','desktop_r9_c5','desktop/desktop_r9_c5_s6.gif','desktop/desktop_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r7_c4','desktop/desktop_r7_c4_s7.gif','desktop_r9_c5','desktop/desktop_r9_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="92,195,-96,145,-101,162,-103,177,-103,191,-103,206,-101,218,-98,234,-95,244,-90,259,-83,274,-78,285,-74,293,7,245,92,195" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r4_c2','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop_r5_c3','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop_r7_c3','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r4_c2','desktop/desktop_r4_c2_s7.gif','desktop_r5_c3','desktop/desktop_r5_c3_s7.gif','desktop_r7_c3','desktop/desktop_r7_c3_s7.gif',1);"  />
+                        <area shape="poly" coords="94,195,44,383,61,388,76,390,90,390,105,390,117,388,133,385,143,382,158,377,173,370,184,365,192,361,144,280,94,195" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r9_c7','desktop/desktop_r9_c7_s6.gif','desktop/desktop_r9_c7_s8.gif','desktop_r10_c6','desktop/desktop_r10_c6_s6.gif','desktop/desktop_r10_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r9_c7','desktop/desktop_r9_c7_s7.gif','desktop_r10_c6','desktop/desktop_r10_c6_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r3_c3" id="m_desktop_r3_c3">
+                        <area shape="poly" coords="187,168,89,0,74,9,62,18,51,27,41,38,34,48,25,62,20,71,13,85,7,100,3,111,0,120,91,144,187,168" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r3_c3','desktop/desktop_r3_c3_s6.gif','desktop/desktop_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r3_c3','desktop/desktop_r3_c3_s7.gif',1);"  />
+                        <area shape="poly" coords="187,169,-1,119,-6,136,-8,151,-8,165,-8,180,-6,192,-3,208,0,218,5,233,12,248,17,259,21,267,102,219,187,169" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r4_c2','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop_r5_c3','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop_r7_c3','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r4_c2','desktop/desktop_r4_c2_s7.gif','desktop_r5_c3','desktop/desktop_r5_c3_s7.gif','desktop_r7_c3','desktop/desktop_r7_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r4_c2" id="m_desktop_r4_c2">
+                        <area shape="poly" coords="195,50,7,0,2,17,0,32,0,46,0,61,2,73,5,89,8,99,13,114,20,129,25,140,29,148,110,100,195,50" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r4_c2','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop_r5_c3','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop_r7_c3','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r4_c2','desktop/desktop_r4_c2_s7.gif','desktop_r5_c3','desktop/desktop_r5_c3_s7.gif','desktop_r7_c3','desktop/desktop_r7_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r5_c3" id="m_desktop_r5_c3">
+                        <area shape="poly" coords="187,1,-1,-49,-6,-32,-8,-17,-8,-3,-8,12,-6,24,-3,40,0,50,5,65,12,80,17,91,21,99,102,51,187,1" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r4_c2','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop_r5_c3','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop_r7_c3','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r4_c2','desktop/desktop_r4_c2_s7.gif','desktop_r5_c3','desktop/desktop_r5_c3_s7.gif','desktop_r7_c3','desktop/desktop_r7_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r7_c3" id="m_desktop_r7_c3">
+                        <area shape="poly" coords="187,-1,-1,-51,-6,-34,-8,-19,-8,-5,-8,10,-6,22,-3,38,0,48,5,63,12,78,17,89,21,97,102,49,187,-1" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r4_c2','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop_r5_c3','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop_r7_c3','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r4_c2','desktop/desktop_r4_c2_s7.gif','desktop_r5_c3','desktop/desktop_r5_c3_s7.gif','desktop_r7_c3','desktop/desktop_r7_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r7_c4" id="m_desktop_r7_c4">
+                        <area shape="poly" coords="168,0,0,98,9,113,18,125,27,136,38,146,48,153,61,162,71,167,84,174,100,180,111,184,120,187,143,96,168,0" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r7_c4','desktop/desktop_r7_c4_s6.gif','desktop/desktop_r7_c4_s8.gif','desktop_r9_c5','desktop/desktop_r9_c5_s6.gif','desktop/desktop_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r7_c4','desktop/desktop_r7_c4_s7.gif','desktop_r9_c5','desktop/desktop_r9_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="168,-1,-20,-51,-25,-34,-27,-19,-27,-5,-27,10,-25,22,-22,38,-19,48,-14,63,-7,78,-2,89,2,97,83,49,168,-1" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r4_c2','desktop/desktop_r4_c2_s6.gif','desktop/desktop_r4_c2_s8.gif','desktop_r5_c3','desktop/desktop_r5_c3_s6.gif','desktop/desktop_r5_c3_s8.gif','desktop_r7_c3','desktop/desktop_r7_c3_s6.gif','desktop/desktop_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r4_c2','desktop/desktop_r4_c2_s7.gif','desktop_r5_c3','desktop/desktop_r5_c3_s7.gif','desktop_r7_c3','desktop/desktop_r7_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r9_c5" id="m_desktop_r9_c5">
+                        <area shape="poly" coords="92,-166,-76,-68,-67,-53,-58,-41,-49,-30,-38,-20,-28,-13,-15,-4,-5,1,8,8,24,14,35,18,44,21,67,-70,92,-166" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r7_c4','desktop/desktop_r7_c4_s6.gif','desktop/desktop_r7_c4_s8.gif','desktop_r9_c5','desktop/desktop_r9_c5_s6.gif','desktop/desktop_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r7_c4','desktop/desktop_r7_c4_s7.gif','desktop_r9_c5','desktop/desktop_r9_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="94,-167,44,21,61,26,76,28,90,28,105,28,117,26,133,23,143,20,158,15,173,8,184,3,192,-1,144,-82,94,-167" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r9_c7','desktop/desktop_r9_c7_s6.gif','desktop/desktop_r9_c7_s8.gif','desktop_r10_c6','desktop/desktop_r10_c6_s6.gif','desktop/desktop_r10_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r9_c7','desktop/desktop_r9_c7_s7.gif','desktop_r10_c6','desktop/desktop_r10_c6_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r9_c7" id="m_desktop_r9_c7">
+                        <area shape="poly" coords="2,-167,-48,21,-31,26,-16,28,-2,28,13,28,25,26,41,23,51,20,66,15,81,8,92,3,100,-1,52,-82,2,-167" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r9_c7','desktop/desktop_r9_c7_s6.gif','desktop/desktop_r9_c7_s8.gif','desktop_r10_c6','desktop/desktop_r10_c6_s6.gif','desktop/desktop_r10_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r9_c7','desktop/desktop_r9_c7_s7.gif','desktop_r10_c6','desktop/desktop_r10_c6_s7.gif',1);"  />
+                        </map>
+                    <map name="m_desktop_r10_c6" id="m_desktop_r10_c6">
+                        <area shape="poly" coords="50,-188,0,0,17,5,32,7,46,7,61,7,73,5,89,2,99,-1,114,-6,129,-13,140,-18,148,-22,100,-103,50,-188" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','desktop_r9_c7','desktop/desktop_r9_c7_s6.gif','desktop/desktop_r9_c7_s8.gif','desktop_r10_c6','desktop/desktop_r10_c6_s6.gif','desktop/desktop_r10_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','desktop_r9_c7','desktop/desktop_r9_c7_s7.gif','desktop_r10_c6','desktop/desktop_r10_c6_s7.gif',1);"  />
+                        </map>
+                </div>
+
+                <!----desktop ends-->
+
+                <!---mid mobile-->
+
+                <div class="midmobile" onload="MM_preloadImages('mobile-md/mobile-md_r2_c5_s6.gif','mobile-md/mobile-md_r2_c5_s8.gif','mobile-md/mobile-md_r2_c5_s7.gif','mobile-md/mobile-md_r8_c6_s6.gif','mobile-md/mobile-md_r8_c6_s8.gif','mobile-md/mobile-md_r8_c6_s7.gif','mobile-md/mobile-md_r6_c4_s6.gif','mobile-md/mobile-md_r6_c4_s8.gif','mobile-md/mobile-md_r8_c5_s6.gif','mobile-md/mobile-md_r8_c5_s8.gif','mobile-md/mobile-md_r6_c4_s7.gif','mobile-md/mobile-md_r8_c5_s7.gif','mobile-md/mobile-md_r4_c2_s6.gif','mobile-md/mobile-md_r4_c2_s8.gif','mobile-md/mobile-md_r6_c2_s6.gif','mobile-md/mobile-md_r6_c2_s8.gif','mobile-md/mobile-md_r4_c2_s7.gif','mobile-md/mobile-md_r6_c2_s7.gif','mobile-md/mobile-md_r3_c3_s6.gif','mobile-md/mobile-md_r3_c3_s8.gif','mobile-md/mobile-md_r3_c3_s7.gif');">
+                    <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="290">
+
+                        <tr>
+                            <td><img src="mobile-md/spacer.gif" width="18" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="5" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="15" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="46" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="30" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="31" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="65" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="54" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="24" height="1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="11"><img name="mobilemd_r1_c1" src="mobile-md/mobile-md_r1_c1.gif" width="290" height="19" id="mobilemd_r1_c1" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="19" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><img name="mobilemd_r2_c1" src="mobile-md/mobile-md_r2_c1.gif" width="84" height="17" id="mobilemd_r2_c1" alt="" /></td>
+                            <td rowspan="6" colspan="6"><img name="mobilemd_r2_c5" src="mobile-md/mobile-md_r2_c5.gif" width="182" height="237" id="mobilemd_r2_c5" usemap="#m_mobilemd_r2_c5" alt="" /></td>
+                            <td rowspan="9"><img name="mobilemd_r2_c11" src="mobile-md/mobile-md_r2_c11.gif" width="24" height="268" id="mobilemd_r2_c11" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="17" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="mobilemd_r3_c1" src="mobile-md/mobile-md_r3_c1.gif" width="23" height="77" id="mobilemd_r3_c1" alt="" /></td>
+                            <td colspan="2"><img name="mobilemd_r3_c3" src="mobile-md/mobile-md_r3_c3.gif" width="61" height="77" id="mobilemd_r3_c3" usemap="#m_mobilemd_r3_c3" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="77" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7"><img name="mobilemd_r4_c1" src="mobile-md/mobile-md_r4_c1.gif" width="18" height="174" id="mobilemd_r4_c1" alt="" /></td>
+                            <td rowspan="2" colspan="3"><img name="mobilemd_r4_c2" src="mobile-md/mobile-md_r4_c2.gif" width="66" height="32" id="mobilemd_r4_c2" usemap="#m_mobilemd_r4_c2" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="29" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="3" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="mobilemd_r6_c2" src="mobile-md/mobile-md_r6_c2.gif" width="20" height="66" id="mobilemd_r6_c2" usemap="#m_mobilemd_r6_c2" alt="" /></td>
+                            <td rowspan="3"><img name="mobilemd_r6_c4" src="mobile-md/mobile-md_r6_c4.gif" width="46" height="122" id="mobilemd_r6_c4" usemap="#m_mobilemd_r6_c4" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="66" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" colspan="2"><img name="mobilemd_r7_c2" src="mobile-md/mobile-md_r7_c2.gif" width="20" height="76" id="mobilemd_r7_c2" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="45" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img name="mobilemd_r8_c5" src="mobile-md/mobile-md_r8_c5.gif" width="30" height="11" id="mobilemd_r8_c5" usemap="#m_mobilemd_r8_c5" alt="" /></td>
+                            <td rowspan="2" colspan="4"><img name="mobilemd_r8_c6" src="mobile-md/mobile-md_r8_c6.gif" width="98" height="14" id="mobilemd_r8_c6" usemap="#m_mobilemd_r8_c6" alt="" /></td>
+                            <td rowspan="3"><img name="mobilemd_r8_c10" src="mobile-md/mobile-md_r8_c10.gif" width="54" height="31" id="mobilemd_r8_c10" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="11" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2"><img name="mobilemd_r9_c4" src="mobile-md/mobile-md_r9_c4.gif" width="76" height="20" id="mobilemd_r9_c4" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="3" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><img name="mobilemd_r10_c6" src="mobile-md/mobile-md_r10_c6.gif" width="98" height="17" id="mobilemd_r10_c6" alt="" /></td>
+                            <td><img src="mobile-md/spacer.gif" width="1" height="17" alt="" /></td>
+                        </tr>
+                    </table>
+                    <map name="m_mobilemd_r2_c5" id="m_mobilemd_r2_c5">
+                        <area shape="poly" coords="114,237,129,228,138,214,152,196,167,180,176,162,175,148,175,142,162,129,167,124,174,112,182,98,181,87,178,77,170,72,157,67,145,67,134,69,123,68,117,66,117,59,119,53,124,51,131,46,132,38,130,31,124,25,118,20,111,12,101,7,86,3,70,3,50,0,30,3,20,3,7,9,2,18,0,25,2,34,12,39,22,40,30,39,26,48,27,64,33,73,40,86,48,100,56,113,65,116,75,123,83,132,87,133,90,148,90,155,98,161,102,173,102,183,101,191,102,204,102,214,101,221,102,228,104,232,109,235" href="map/entrymap.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r2_c5','mobile-md/mobile-md_r2_c5_s6.gif','mobile-md/mobile-md_r2_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r2_c5','mobile-md/mobile-md_r2_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="63,123,30,244,38,247,51,250,63,251,77,249,90,247,103,243,112,239,120,235,125,233,128,231,96,177,71,134,71,134,66,127,63,123" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r8_c6','mobile-md/mobile-md_r8_c6_s6.gif','mobile-md/mobile-md_r8_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r8_c6','mobile-md/mobile-md_r8_c6_s7.gif',1);"  />
+                        <area shape="poly" coords="63,126,-46,189,-43,196,-36,208,-27,217,-16,226,-5,233,7,239,16,243,24,246,30,248,33,248,48,188,61,140,61,140,63,131,63,126" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s6.gif','mobile-md/mobile-md_r6_c4_s8.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s6.gif','mobile-md/mobile-md_r8_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s7.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="62,127,-59,94,-62,102,-66,115,-66,127,-65,141,-62,154,-58,167,-54,176,-50,184,-48,189,-46,192,8,160,51,135,51,135,58,130,62,127" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s6.gif','mobile-md/mobile-md_r4_c2_s8.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s6.gif','mobile-md/mobile-md_r6_c2_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s7.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s7.gif',1);"  />
+                        <area shape="poly" coords="61,126,-2,17,-9,20,-21,27,-30,36,-39,47,-46,58,-52,70,-56,79,-59,87,-61,93,-61,96,-1,111,47,124,47,124,56,126,61,126" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r3_c3','mobile-md/mobile-md_r3_c3_s6.gif','mobile-md/mobile-md_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r3_c3','mobile-md/mobile-md_r3_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_mobilemd_r3_c3" id="m_mobilemd_r3_c3">
+                        <area shape="poly" coords="122,109,59,0,52,3,40,10,31,19,22,30,15,41,9,53,5,62,2,70,0,76,0,79,60,94,108,107,108,107,117,109,122,109" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r3_c3','mobile-md/mobile-md_r3_c3_s6.gif','mobile-md/mobile-md_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r3_c3','mobile-md/mobile-md_r3_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_mobilemd_r4_c2" id="m_mobilemd_r4_c2">
+                        <area shape="poly" coords="128,33,7,0,4,8,0,21,0,33,1,47,4,60,8,73,12,82,16,90,18,95,20,98,74,66,117,41,117,41,124,36,128,33" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s6.gif','mobile-md/mobile-md_r4_c2_s8.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s6.gif','mobile-md/mobile-md_r6_c2_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s7.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s7.gif',1);"  />
+                        <area shape="poly" coords="127,32,64,-77,57,-74,45,-67,36,-58,27,-47,20,-36,14,-24,10,-15,7,-7,5,-1,5,2,65,17,113,30,113,30,122,32,127,32" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r3_c3','mobile-md/mobile-md_r3_c3_s6.gif','mobile-md/mobile-md_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r3_c3','mobile-md/mobile-md_r3_c3_s7.gif',1);"  />
+                        </map>
+                    <map name="m_mobilemd_r6_c2" id="m_mobilemd_r6_c2">
+                        <area shape="poly" coords="128,1,7,-32,4,-24,0,-11,0,1,1,15,4,28,8,41,12,50,16,58,18,63,20,66,74,34,117,9,117,9,124,4,128,1" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s6.gif','mobile-md/mobile-md_r4_c2_s8.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s6.gif','mobile-md/mobile-md_r6_c2_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s7.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s7.gif',1);"  />
+                        </map>
+                    <map name="m_mobilemd_r6_c4" id="m_mobilemd_r6_c4">
+                        <area shape="poly" coords="109,0,0,63,3,70,10,82,19,91,30,100,41,107,53,113,62,117,70,120,76,122,79,122,94,62,107,14,107,14,109,5,109,0" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s6.gif','mobile-md/mobile-md_r6_c4_s8.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s6.gif','mobile-md/mobile-md_r8_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s7.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s7.gif',1);"  />
+                        <area shape="poly" coords="108,1,-13,-32,-16,-24,-20,-11,-20,1,-19,15,-16,28,-12,41,-8,50,-4,58,-2,63,0,66,54,34,97,9,97,9,104,4,108,1" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s6.gif','mobile-md/mobile-md_r4_c2_s8.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s6.gif','mobile-md/mobile-md_r6_c2_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r4_c2','mobile-md/mobile-md_r4_c2_s7.gif','mobilemd_r6_c2','mobile-md/mobile-md_r6_c2_s7.gif',1);"  />
+                        </map>
+                    <map name="m_mobilemd_r8_c5" id="m_mobilemd_r8_c5">
+                        <area shape="poly" coords="63,-111,-46,-48,-43,-41,-36,-29,-27,-20,-16,-11,-5,-4,7,2,16,6,24,9,30,11,33,11,48,-49,61,-97,61,-97,63,-106,63,-111" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s6.gif','mobile-md/mobile-md_r6_c4_s8.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s6.gif','mobile-md/mobile-md_r8_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s7.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s7.gif',1);"  />
+                        </map>
+                    <map name="m_mobilemd_r8_c6" id="m_mobilemd_r8_c6">
+                        <area shape="poly" coords="33,-114,0,7,8,10,21,13,33,14,47,12,60,10,73,6,82,2,90,-2,95,-4,98,-6,66,-60,41,-103,41,-103,36,-110,33,-114" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r8_c6','mobile-md/mobile-md_r8_c6_s6.gif','mobile-md/mobile-md_r8_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r8_c6','mobile-md/mobile-md_r8_c6_s7.gif',1);"  />
+                        <area shape="poly" coords="33,-111,-76,-48,-73,-41,-66,-29,-57,-20,-46,-11,-35,-4,-23,2,-14,6,-6,9,0,11,3,11,18,-49,31,-97,31,-97,33,-106,33,-111" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s6.gif','mobile-md/mobile-md_r6_c4_s8.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s6.gif','mobile-md/mobile-md_r8_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilemd_r6_c4','mobile-md/mobile-md_r6_c4_s7.gif','mobilemd_r8_c5','mobile-md/mobile-md_r8_c5_s7.gif',1);"  />
+                        </map>
+                </div>
+
+                <!---mid mobile ends-->
+
+
+
+                <!---small mobile-->
+
+                <div class="mobile " onload="MM_preloadImages('mobile-sm/mobile-sm_r2_c5_s6.gif','mobile-sm/mobile-sm_r2_c5_s8.gif','mobile-sm/mobile-sm_r2_c5_s7.gif','mobile-sm/mobile-sm_r3_c3_s6.gif','mobile-sm/mobile-sm_r3_c3_s8.gif','mobile-sm/mobile-sm_r3_c3_s7.gif','mobile-sm/mobile-sm_r9_c6_s6.gif','mobile-sm/mobile-sm_r9_c6_s8.gif','mobile-sm/mobile-sm_r9_c6_s7.gif','mobile-sm/mobile-sm_r7_c4_s6.gif','mobile-sm/mobile-sm_r7_c4_s8.gif','mobile-sm/mobile-sm_r9_c5_s6.gif','mobile-sm/mobile-sm_r9_c5_s8.gif','mobile-sm/mobile-sm_r7_c4_s7.gif','mobile-sm/mobile-sm_r9_c5_s7.gif','mobile-sm/mobile-sm_r4_c2_s6.gif','mobile-sm/mobile-sm_r4_c2_s8.gif','mobile-sm/mobile-sm_r7_c3_s6.gif','mobile-sm/mobile-sm_r7_c3_s8.gif','mobile-sm/mobile-sm_r4_c2_s7.gif','mobile-sm/mobile-sm_r7_c3_s7.gif');">
+                    <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="176">
+
+                        <tr>
+                            <td><img src="mobile-sm/spacer.gif" width="10" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="4" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="9" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="26" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="19" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="20" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="36" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="36" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="14" height="1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="11"><img name="mobilesm_r1_c1" src="mobile-sm/mobile-sm_r1_c1.gif" width="176" height="10" id="mobilesm_r1_c1" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="10" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><img name="mobilesm_r2_c1" src="mobile-sm/mobile-sm_r2_c1.gif" width="49" height="13" id="mobilesm_r2_c1" alt="" /></td>
+                            <td rowspan="7" colspan="6"><img name="mobilesm_r2_c5" src="mobile-sm/mobile-sm_r2_c5.gif" width="113" height="145" id="mobilesm_r2_c5" usemap="#m_mobilesm_r2_c5" alt="" /></td>
+                            <td rowspan="10"><img name="mobilesm_r2_c11" src="mobile-sm/mobile-sm_r2_c11.gif" width="14" height="166" id="mobilesm_r2_c11" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="13" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img name="mobilesm_r3_c1" src="mobile-sm/mobile-sm_r3_c1.gif" width="14" height="46" id="mobilesm_r3_c1" alt="" /></td>
+                            <td rowspan="4" colspan="2"><img name="mobilesm_r3_c3" src="mobile-sm/mobile-sm_r3_c3.gif" width="35" height="67" id="mobilesm_r3_c3" usemap="#m_mobilesm_r3_c3" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="46" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="8"><img name="mobilesm_r4_c1" src="mobile-sm/mobile-sm_r4_c1.gif" width="10" height="107" id="mobilesm_r4_c1" alt="" /></td>
+                            <td rowspan="4"><img name="mobilesm_r4_c2" src="mobile-sm/mobile-sm_r4_c2.gif" width="4" height="59" id="mobilesm_r4_c2" usemap="#m_mobilesm_r4_c2" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="19" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="1" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img name="mobilesm_r7_c3" src="mobile-sm/mobile-sm_r7_c3.gif" width="9" height="38" id="mobilesm_r7_c3" usemap="#m_mobilesm_r7_c3" alt="" /></td>
+                            <td rowspan="3"><img name="mobilesm_r7_c4" src="mobile-sm/mobile-sm_r7_c4.gif" width="26" height="73" id="mobilesm_r7_c4" usemap="#m_mobilesm_r7_c4" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="38" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" colspan="2"><img name="mobilesm_r8_c2" src="mobile-sm/mobile-sm_r8_c2.gif" width="13" height="48" id="mobilesm_r8_c2" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="27" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td><img name="mobilesm_r9_c5" src="mobile-sm/mobile-sm_r9_c5.gif" width="19" height="8" id="mobilesm_r9_c5" usemap="#m_mobilesm_r9_c5" alt="" /></td>
+                            <td rowspan="2" colspan="4"><img name="mobilesm_r9_c6" src="mobile-sm/mobile-sm_r9_c6.gif" width="58" height="11" id="mobilesm_r9_c6" usemap="#m_mobilesm_r9_c6" alt="" /></td>
+                            <td rowspan="3"><img name="mobilesm_r9_c10" src="mobile-sm/mobile-sm_r9_c10.gif" width="36" height="21" id="mobilesm_r9_c10" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="8" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2"><img name="mobilesm_r10_c4" src="mobile-sm/mobile-sm_r10_c4.gif" width="45" height="13" id="mobilesm_r10_c4" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="3" alt="" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><img name="mobilesm_r11_c6" src="mobile-sm/mobile-sm_r11_c6.gif" width="58" height="10" id="mobilesm_r11_c6" alt="" /></td>
+                            <td><img src="mobile-sm/spacer.gif" width="1" height="10" alt="" /></td>
+                        </tr>
+                    </table>
+                    <map name="m_mobilesm_r2_c5" id="m_mobilesm_r2_c5">
+                    <area shape="poly" coords="72,145,75,144,80,140,84,132,92,124,98,118,104,108,110,97,109,85,106,78,107,70,111,62,112,56,113,51,109,45,104,43,96,43,84,42,73,44,74,36,80,32,86,26,83,20,77,14,69,7,58,3,44,2,29,1,13,0,3,4,0,12,1,20,5,23,12,24,17,26,17,33,17,40,23,52,32,65,42,73,51,76,54,82,56,90,55,94,58,97,62,102,64,109,63,115,63,125,62,135,64,141,66,145" href="map/entrymap.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r2_c5','mobile-sm/mobile-sm_r2_c5_s6.gif','mobile-sm/mobile-sm_r2_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r2_c5','mobile-sm/mobile-sm_r2_c5_s7.gif',1);"  />
+                    <area shape="poly" coords="-35,60,39,80,1,13,-6,15,-12,20,-17,25,-23,32,-26,39,-29,43,-32,49,-34,55,-35,60" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r3_c3','mobile-sm/mobile-sm_r3_c3_s6.gif','mobile-sm/mobile-sm_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r3_c3','mobile-sm/mobile-sm_r3_c3_s7.gif',1);"  />
+                    <area shape="poly" coords="77,144,39,78,19,152,25,155,33,156,40,156,49,155,56,153,61,152,67,149,73,147,77,144" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r9_c6','mobile-sm/mobile-sm_r9_c6_s6.gif','mobile-sm/mobile-sm_r9_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r9_c6','mobile-sm/mobile-sm_r9_c6_s7.gif',1);"  />
+                    <area shape="poly" coords="21,153,41,79,-26,117,-24,124,-19,130,-14,135,-7,141,0,144,4,147,10,149,16,151,21,153" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s6.gif','mobile-sm/mobile-sm_r7_c4_s8.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s6.gif','mobile-sm/mobile-sm_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s7.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s7.gif',1);"  />
+                    <area shape="poly" coords="-26,118,40,80,-35,59,-38,66,-39,73,-39,81,-38,90,-35,97,-34,102,-32,108,-29,113,-26,118" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s6.gif','mobile-sm/mobile-sm_r4_c2_s8.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s6.gif','mobile-sm/mobile-sm_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s7.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s7.gif',1);"  />
+                    </map>
+                    <map name="m_mobilesm_r3_c3" id="m_mobilesm_r3_c3">
+                    <area shape="poly" coords="0,47,74,67,36,0,29,2,23,7,18,12,12,19,9,26,6,30,3,36,1,42,0,47" href="concept/concept.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r3_c3','mobile-sm/mobile-sm_r3_c3_s6.gif','mobile-sm/mobile-sm_r3_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r3_c3','mobile-sm/mobile-sm_r3_c3_s7.gif',1);"  />
+                    <area shape="poly" coords="56,140,76,66,9,104,11,111,16,117,21,122,28,128,35,131,39,134,45,136,51,138,56,140" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s6.gif','mobile-sm/mobile-sm_r7_c4_s8.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s6.gif','mobile-sm/mobile-sm_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s7.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s7.gif',1);"  />
+                    <area shape="poly" coords="9,105,75,67,0,46,-3,53,-4,60,-4,68,-3,77,0,84,1,89,3,95,6,100,9,105" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s6.gif','mobile-sm/mobile-sm_r4_c2_s8.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s6.gif','mobile-sm/mobile-sm_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s7.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s7.gif',1);"  />
+                    </map>
+                    <map name="m_mobilesm_r4_c2" id="m_mobilesm_r4_c2">
+                    <area shape="poly" coords="13,59,79,21,4,0,1,7,0,14,0,22,1,31,4,38,5,43,7,49,10,54,13,59" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s6.gif','mobile-sm/mobile-sm_r4_c2_s8.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s6.gif','mobile-sm/mobile-sm_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s7.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s7.gif',1);"  />
+                    </map>
+                    <map name="m_mobilesm_r7_c3" id="m_mobilesm_r7_c3">
+                    <area shape="poly" coords="9,38,75,0,0,-21,-3,-14,-4,-7,-4,1,-3,10,0,17,1,22,3,28,6,33,9,38" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s6.gif','mobile-sm/mobile-sm_r4_c2_s8.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s6.gif','mobile-sm/mobile-sm_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s7.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s7.gif',1);"  />
+                    </map>
+                    <map name="m_mobilesm_r7_c4" id="m_mobilesm_r7_c4">
+                    <area shape="poly" coords="47,73,67,-1,0,37,2,44,7,50,12,55,19,61,26,64,30,67,36,69,42,71,47,73" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s6.gif','mobile-sm/mobile-sm_r7_c4_s8.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s6.gif','mobile-sm/mobile-sm_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s7.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s7.gif',1);"  />
+                    <area shape="poly" coords="0,38,66,0,-9,-21,-12,-14,-13,-7,-13,1,-12,10,-9,17,-8,22,-6,28,-3,33,0,38" href="portrait/portrait.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s6.gif','mobile-sm/mobile-sm_r4_c2_s8.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s6.gif','mobile-sm/mobile-sm_r7_c3_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r4_c2','mobile-sm/mobile-sm_r4_c2_s7.gif','mobilesm_r7_c3','mobile-sm/mobile-sm_r7_c3_s7.gif',1);"  />
+                    </map>
+                    <map name="m_mobilesm_r9_c5" id="m_mobilesm_r9_c5">
+                    <area shape="poly" coords="21,8,41,-66,-26,-28,-24,-21,-19,-15,-14,-10,-7,-4,0,-1,4,2,10,4,16,6,21,8" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s6.gif','mobile-sm/mobile-sm_r7_c4_s8.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s6.gif','mobile-sm/mobile-sm_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s7.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s7.gif',1);"  />
+                    </map>
+                    <map name="m_mobilesm_r9_c6" id="m_mobilesm_r9_c6">
+                    <area shape="poly" coords="58,-1,20,-67,0,7,6,10,14,11,21,11,30,10,37,8,42,7,48,4,54,2,58,-1" href="sponsoring/sponsoring.html" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r9_c6','mobile-sm/mobile-sm_r9_c6_s6.gif','mobile-sm/mobile-sm_r9_c6_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r9_c6','mobile-sm/mobile-sm_r9_c6_s7.gif',1);"  />
+                    <area shape="poly" coords="2,8,22,-66,-45,-28,-43,-21,-38,-15,-33,-10,-26,-4,-19,-1,-15,2,-9,4,-3,6,2,8" href="guestbook/guestbook.php" alt="" onmouseout="MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s6.gif','mobile-sm/mobile-sm_r7_c4_s8.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s6.gif','mobile-sm/mobile-sm_r9_c5_s8.gif',1);"  onclick="MM_nbGroup('down','navbar1','mobilesm_r7_c4','mobile-sm/mobile-sm_r7_c4_s7.gif','mobilesm_r9_c5','mobile-sm/mobile-sm_r9_c5_s7.gif',1);"  />
+                    </map>
+                </div>
+
+                <!---small mobile end-->
+
+            </div>
+
+            <div class="col-lg-3 mt-2 mb-2 ">
+                <p class="dates ">Arrival date: 23 January 2009 in Ushuaia, Argentina</p>
+            </div>
+        </div>
+        <div class="row text-center mt-4">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6">
+                <img src="home-img/hostpoint.gif" alt="">
+
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>

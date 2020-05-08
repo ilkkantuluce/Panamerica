@@ -1,0 +1,363 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../home-img/iconlogo.ico" />
+
+    <title>Guatemala</title>
+    <style>
+        body {
+            background-image: url('../img_map/background.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: black !important;
+            font-family: Comic Sans MS !important;
+            font-size: 16px !important;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        @media screen and (min-width: 1490px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        .Stil1 {
+            font-family: "Courier New", Courier, mono;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .portrait {
+            display: block;
+        }
+        
+        .men {
+            display: block;
+        }
+        
+        .reports {
+            margin-bottom: 95px;
+        }
+        
+        @media screen and (max-width: 790px) {
+            .portrait {
+                display: inline;
+            }
+            .topnav {
+                display: inline;
+            }
+            .reports {
+                margin-bottom: 50px;
+            }
+        }
+        
+        .menu {
+            margin-top: 50px;
+        }
+        
+        area:link,
+        area:hover,
+        area:active,
+        area:focus {
+            outline: none;
+        }
+        
+        .wrap {
+            width: 772px !important;
+        }
+        
+        @media screen and (max-width: 1150px) {
+            .wrap {
+                width: auto !important;
+            }
+        }
+        
+        td img {
+            display: block;
+        }
+    </style>
+
+    <script language="JavaScript1.2" type="text/javascript">
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x;
+            if (!d) d = document;
+            if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document;
+                n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n];
+            for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n);
+            return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0,
+                x, a = MM_swapImage.arguments;
+            document.MM_sr = new Array;
+            for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) {
+                    document.MM_sr[j++] = x;
+                    if (!x.oSrc) x.oSrc = x.src;
+                    x.src = a[i + 2];
+                }
+        }
+
+        function MM_nbGroup(event, grpName) { //v6.0
+            var i, img, nbArr, args = MM_nbGroup.arguments;
+            if (event == "init" && args.length > 2) {
+                if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+                    img.MM_init = true;
+                    img.MM_up = args[3];
+                    img.MM_dn = img.src;
+                    if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+                    nbArr[nbArr.length] = img;
+                    for (i = 4; i < args.length - 1; i += 2)
+                        if ((img = MM_findObj(args[i])) != null) {
+                            if (!img.MM_up) img.MM_up = img.src;
+                            img.src = img.MM_dn = args[i + 1];
+                            nbArr[nbArr.length] = img;
+                        }
+                }
+            } else if (event == "over") {
+                document.MM_nbOver = nbArr = new Array();
+                for (i = 1; i < args.length - 1; i += 3)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = (img.MM_dn && args[i + 2]) ? args[i + 2] : ((args[i + 1]) ? args[i + 1] : img.MM_up);
+                        nbArr[nbArr.length] = img;
+                    }
+            } else if (event == "out") {
+                for (i = 0; i < document.MM_nbOver.length; i++) {
+                    img = document.MM_nbOver[i];
+                    img.src = (img.MM_dn) ? img.MM_dn : img.MM_up;
+                }
+            } else if (event == "down") {
+                nbArr = document[grpName];
+                if (nbArr)
+                    for (i = 0; i < nbArr.length; i++) {
+                        img = nbArr[i];
+                        img.src = img.MM_up;
+                        img.MM_dn = 0;
+                    }
+                document[grpName] = nbArr = new Array();
+                for (i = 2; i < args.length - 1; i += 2)
+                    if ((img = MM_findObj(args[i])) != null) {
+                        if (!img.MM_up) img.MM_up = img.src;
+                        img.src = img.MM_dn = (args[i + 1]) ? args[i + 1] : img.MM_up;
+                        nbArr[nbArr.length] = img;
+                    }
+            }
+        }
+
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length,
+                    a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="Stil1 text-center" style="margin-top:35px; margin-bottom:35px; font-size: 40px !important; color: #E9D02D; text-shadow: 2px -3px 2px #000000;">Guatemala</h1>
+        <div class="row reports">
+            <div class="col-md-3 text-center mb-3">
+                <a class="home topnav" href="../../index.html"><img src="../img_map/home.png"></a>
+                <p class="mt-2 topnav"><img src="../img_map/bttn.fw.png" width="83" height="82" usemap="#Map" border="0">
+                    <map name="Map">
+                      <area shape="rect" coords="3,38,83,80" href="../belize/elevation.html">
+                      <area shape="rect" coords="3,2,81,40" href="../honduras/elevation.html">
+                    </map>
+                    <br><br>
+                    <a class="portrait menu" href="../guatemala.html"><img src="../img_map/photos.fw.png"></a>
+                    <a class="portrait mt-2" href="reports.html"><img src="../img_map/reports.fw.png"></a>
+                    <a class="portrait mt-2" href="elevation.html"><img src="../img_map/activeelevation.fw.png"></a>
+                </p>
+            </div>
+            <div class="col-md-8 text-center mb-3 ">
+                <div class="wrap" style="border-radius: 30px; padding: 20px; border: 12px solid black; background-color: white; -webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); -moz-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75); box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.75);">
+                    <div class="row" style="overflow: auto;" onload="MM_preloadImages('elevation/img/guatemala1_r2_c6_s6.gif','elevation/img/guatemala1_r2_c6_s8.gif','elevation/img/guatemala1_r6_c8_s6.gif','elevation/img/guatemala1_r6_c8_s8.gif','elevation/img/guatemala1_r2_c6_s7.gif','elevation/img/guatemala1_r6_c8_s7.gif','elevation/stat3.fw.png','elevation/img/guatemala1_r13_c2.gif','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif','elevation/img/guatemala1_r3_c9_s7.gif','elevation/img/guatemala1_r5_c12_s7.gif','elevation/img/guatemala1_r7_c9_s7.gif','elevation/img/guatemala1_r7_c11_s7.gif','elevation/img/guatemala1_r9_c8_s7.gif','elevation/img/guatemala1_r10_c10_s7.gif','elevation/stat4.fw.png','elevation/img/guatemala1_r2_c12_s6.gif','elevation/img/guatemala1_r2_c12_s8.gif','elevation/img/guatemala1_r2_c12_s7.gif','elevation/stat6.fw.png','elevation/img/guatemala1_r4_c3_s6.gif','elevation/img/guatemala1_r4_c3_s8.gif','elevation/img/guatemala1_r4_c3_s7.gif','elevation/stat1.fw.png','elevation/img/guatemala1_r6_c5_s6.gif','elevation/img/guatemala1_r6_c5_s8.gif','elevation/img/guatemala1_r6_c5_s7.gif','elevation/stat2.fw.png','elevation/img/guatemala1_r7_c10_s6.gif','elevation/img/guatemala1_r7_c10_s8.gif','elevation/img/guatemala1_r7_c10_s7.gif','elevation/stat5.fw.png');">
+
+
+                        <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="737">
+                            <tr>
+                                <td><img src="elevation/img/spacer.gif" width="93" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="23" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="182" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="75" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="10" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="95" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="6" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="74" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="25" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="36" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="21" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="4" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="17" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="54" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="22" height="1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="1" alt="" /></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="15"><img name="guatemala1_r1_c1" src="elevation/img/guatemala1_r1_c1.gif" width="737" height="104" id="guatemala1_r1_c1" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="104" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="5"><img name="guatemala1_r2_c1" src="elevation/img/guatemala1_r2_c1.gif" width="383" height="21" id="guatemala1_r2_c1" alt="" /></td>
+                                <td rowspan="4" colspan="3">
+                                    <img name="guatemala1_r2_c6" src="elevation/img/guatemala1_r2_c6.gif" width="175" height="43" id="guatemala1_r2_c6" usemap="#m_guatemala1_r2_c6" alt="" />
+                                </td>
+                                <td colspan="3"><img name="guatemala1_r2_c9" src="elevation/img/guatemala1_r2_c9.gif" width="82" height="17" id="guatemala1_r2_c9" alt="" /></td>
+                                <td rowspan="3" colspan="3"><img name="guatemala1_r2_c12" src="elevation/img/guatemala1_r2_c12.gif" width="75" height="22" id="guatemala1_r2_c12" usemap="#m_guatemala1_r2_c12" alt="" /></td>
+                                <td rowspan="12"><img name="guatemala1_r2_c15" src="elevation/img/guatemala1_r2_c15.gif" width="22" height="416" id="guatemala1_r2_c15" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="17" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4" colspan="3">
+                                    <img name="guatemala1_r3_c9" src="elevation/img/guatemala1_r3_c9.gif" width="82" height="55" id="guatemala1_r3_c9" usemap="#m_guatemala1_r3_c9" alt="" />
+                                </td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="4" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="9" colspan="2"><img name="guatemala1_r4_c1" src="elevation/img/guatemala1_r4_c1.gif" width="116" height="265" id="guatemala1_r4_c1" alt="" /></td>
+                                <td rowspan="4">
+                                    <img name="guatemala1_r4_c3" src="elevation/img/guatemala1_r4_c3.gif" width="182" height="55" id="guatemala1_r4_c3" usemap="#m_guatemala1_r4_c3" alt="" />
+                                </td>
+                                <td rowspan="2" colspan="2"><img name="guatemala1_r4_c4" src="elevation/img/guatemala1_r4_c4.gif" width="85" height="22" id="guatemala1_r4_c4" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="1" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="6" colspan="2">
+                                    <img name="guatemala1_r5_c12" src="elevation/img/guatemala1_r5_c12.gif" width="21" height="100" id="guatemala1_r5_c12" usemap="#m_guatemala1_r5_c12" alt="" />
+                                </td>
+                                <td rowspan="9"><img name="guatemala1_r5_c14" src="elevation/img/guatemala1_r5_c14.gif" width="54" height="394" id="guatemala1_r5_c14" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="21" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7"><img name="guatemala1_r6_c4" src="elevation/img/guatemala1_r6_c4.gif" width="75" height="243" id="guatemala1_r6_c4" alt="" /></td>
+                                <td rowspan="6" colspan="3">
+                                    <img name="guatemala1_r6_c5" src="elevation/img/guatemala1_r6_c5.gif" width="111" height="85" id="guatemala1_r6_c5" usemap="#m_guatemala1_r6_c5" alt="" />
+                                </td>
+                                <td rowspan="3">
+                                    <img name="guatemala1_r6_c8" src="elevation/img/guatemala1_r6_c8.gif" width="74" height="36" id="guatemala1_r6_c8" usemap="#m_guatemala1_r6_c8" alt="" />
+                                </td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="29" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">
+                                    <img name="guatemala1_r7_c9" src="elevation/img/guatemala1_r7_c9.gif" width="25" height="50" id="guatemala1_r7_c9" usemap="#m_guatemala1_r7_c9" alt="" />
+                                </td>
+                                <td rowspan="3"><img name="guatemala1_r7_c10" src="elevation/img/guatemala1_r7_c10.gif" width="36" height="30" id="guatemala1_r7_c10" usemap="#m_guatemala1_r7_c10" alt="" /></td>
+                                <td rowspan="4">
+                                    <img name="guatemala1_r7_c11" src="elevation/img/guatemala1_r7_c11.gif" width="21" height="50" id="guatemala1_r7_c11" usemap="#m_guatemala1_r7_c11" alt="" />
+                                </td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="4" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5"><img name="guatemala1_r8_c3" src="elevation/img/guatemala1_r8_c3.gif" width="182" height="210" id="guatemala1_r8_c3" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="3" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <img name="guatemala1_r9_c8" src="elevation/img/guatemala1_r9_c8.gif" width="74" height="43" id="guatemala1_r9_c8" usemap="#m_guatemala1_r9_c8" alt="" />
+                                </td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="23" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img name="guatemala1_r10_c10" src="elevation/img/guatemala1_r10_c10.gif" width="36" height="20" id="guatemala1_r10_c10" usemap="#m_guatemala1_r10_c10" alt="" />
+                                </td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="20" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="6"><img name="guatemala1_r11_c8" src="elevation/img/guatemala1_r11_c8.gif" width="177" height="164" id="guatemala1_r11_c8" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="6" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><img name="guatemala1_r12_c5" src="elevation/img/guatemala1_r12_c5.gif" width="111" height="158" id="guatemala1_r12_c5" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="158" alt="" /></td>
+                            </tr>
+                            <tr>
+                                <td><img name="guatemala1_r13_c1" src="elevation/img/guatemala1_r13_c1.gif" width="93" height="130" id="guatemala1_r13_c1" alt="" /></td>
+                                <td colspan="11"><img name="guatemala1_r13_c2" src="elevation/img/guatemala1_r13_c2.gif" width="551" height="130" id="guatemala1_r13_c2" alt="" /></td>
+                                <td><img name="guatemala1_r13_c13" src="elevation/img/guatemala1_r13_c13.gif" width="17" height="130" id="guatemala1_r13_c13" alt="" /></td>
+                                <td><img src="elevation/img/spacer.gif" width="1" height="130" alt="" /></td>
+                            </tr>
+                        </table>
+                        <map name="m_guatemala1_r2_c6" id="m_guatemala1_r2_c6">
+                    <area shape="poly" coords="0,40,44,44,53,41,77,39,94,39,103,37,112,40,118,44,118,48,116,53,122,67,128,70,135,79,139,78,148,77,148,70,142,67,134,58,131,50,130,34,123,28,135,20,153,15,175,9,173,4,167,1,146,0,139,5,130,4,123,11,119,14,107,17,107,21,104,24,91,24,82,26,64,27,53,28,41,29,33,26,26,28,13,25,6,27,2,32" href="../elevation-profiles/Elevation_Profile-Guatemala-Huehuetenango_ElRancho.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r2_c6','elevation/img/guatemala1_r2_c6_s6.gif','elevation/img/guatemala1_r2_c6_s8.gif','guatemala1_r6_c8','elevation/img/guatemala1_r6_c8_s6.gif','elevation/img/guatemala1_r6_c8_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat3.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r2_c6','elevation/img/guatemala1_r2_c6_s7.gif','guatemala1_r6_c8','elevation/img/guatemala1_r6_c8_s7.gif',1);"  />
+                    <area shape="poly" coords="101,122,112,117,122,108,158,89,157,87,170,85,192,76,217,67,238,57,247,53,254,48,259,37,278,22,274,17,269,19,247,35,242,44,220,52,198,63,180,70,166,75,153,76,143,85,123,93,109,102,100,108,95,115,97,119" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r2_c12" id="m_guatemala1_r2_c12">
+                    <area shape="poly" coords="1,8,5,12,8,16,10,17,18,17,20,20,24,22,30,20,34,18,48,18,53,13,62,10,74,9,75,2,67,0,54,1,49,4,40,8,30,9,24,13,19,10,15,8,8,2,3,2,0,4" href="javascript:;" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r2_c12','elevation/img/guatemala1_r2_c12_s6.gif','elevation/img/guatemala1_r2_c12_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat6.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r2_c12','elevation/img/guatemala1_r2_c12_s7.gif',1);"  />
+                    <area shape="poly" coords="-156,122,-145,117,-135,108,-99,89,-100,87,-87,85,-65,76,-40,67,-19,57,-10,53,-3,48,2,37,21,22,17,17,12,19,-10,35,-15,44,-37,52,-59,63,-77,70,-91,75,-104,76,-114,85,-134,93,-148,102,-157,108,-162,115,-160,119" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r3_c9" id="m_guatemala1_r3_c9">
+                    <area shape="poly" coords="-74,105,-63,100,-53,91,-17,72,-18,70,-5,68,17,59,42,50,63,40,72,36,79,31,84,20,103,5,99,0,94,2,72,18,67,27,45,35,23,46,5,53,-9,58,-22,59,-32,68,-52,76,-66,85,-75,91,-80,98,-78,102" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r4_c3" id="m_guatemala1_r4_c3">
+                    <area shape="poly" coords="2,53,65,55,84,50,96,41,123,40,124,35,150,34,152,32,164,27,182,22,175,13,160,13,155,18,144,20,138,24,133,24,131,17,133,5,125,0,120,6,117,15,119,22,115,28,108,31,95,29,84,34,71,41,50,42,32,41,15,40,3,41,0,46,1,51" href="../elevation-profiles/Elevation_Profile-Guatemala-Peten.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r4_c3','elevation/img/guatemala1_r4_c3_s6.gif','elevation/img/guatemala1_r4_c3_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat1.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r4_c3','elevation/img/guatemala1_r4_c3_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r5_c12" id="m_guatemala1_r5_c12">
+                    <area shape="poly" coords="-156,100,-145,95,-135,86,-99,67,-100,65,-87,63,-65,54,-40,45,-19,35,-10,31,-3,26,2,15,21,0,17,-5,12,-3,-10,13,-15,22,-37,30,-59,41,-77,48,-91,53,-104,54,-114,63,-134,71,-148,80,-157,86,-162,93,-160,97" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r6_c5" id="m_guatemala1_r6_c5">
+                    <area shape="poly" coords="12,0,17,3,16,10,13,19,17,28,17,33,20,39,23,44,28,46,32,48,34,49,42,45,48,49,48,53,50,56,57,61,63,64,69,65,77,63,83,66,87,70,88,73,91,75,95,70,104,70,108,71,111,73,109,78,103,80,101,80,97,83,90,85,77,79,77,75,74,76,68,77,58,74,51,71,44,65,40,63,38,60,28,59,26,56,20,56,17,51,11,54,6,52,8,42,10,40,6,36,6,29,2,18,0,14,4,6,8,3" href="../elevation-profiles/Elevation_Profile-Guatemala-Huehuetenango_Antigua.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r6_c5','elevation/img/guatemala1_r6_c5_s6.gif','elevation/img/guatemala1_r6_c5_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat2.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r6_c5','elevation/img/guatemala1_r6_c5_s7.gif',1);"  />
+                    <area shape="poly" coords="10,-3,54,1,63,-2,87,-4,104,-4,113,-6,122,-3,128,1,128,5,126,10,132,24,138,27,145,36,149,35,158,34,158,27,152,24,144,15,141,7,140,-9,133,-15,145,-23,163,-28,185,-34,183,-39,177,-42,156,-43,149,-38,140,-39,133,-32,129,-29,117,-26,117,-22,114,-19,101,-19,92,-17,74,-16,63,-15,51,-14,43,-17,36,-15,23,-18,16,-16,12,-11" href="../elevation-profiles/Elevation_Profile-Guatemala-Huehuetenango_ElRancho.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r2_c6','elevation/img/guatemala1_r2_c6_s6.gif','elevation/img/guatemala1_r2_c6_s8.gif','guatemala1_r6_c8','elevation/img/guatemala1_r6_c8_s6.gif','elevation/img/guatemala1_r6_c8_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat3.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r2_c6','elevation/img/guatemala1_r2_c6_s7.gif','guatemala1_r6_c8','elevation/img/guatemala1_r6_c8_s7.gif',1);"  />
+                    <area shape="poly" coords="111,79,122,74,132,65,168,46,167,44,180,42,202,33,227,24,248,14,257,10,264,5,269,-6,288,-21,284,-26,279,-24,257,-8,252,1,230,9,208,20,190,27,176,32,163,33,153,42,133,50,119,59,110,65,105,72,107,76" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r6_c8" id="m_guatemala1_r6_c8">
+                    <area shape="poly" coords="-101,-3,-57,1,-48,-2,-24,-4,-7,-4,2,-6,11,-3,17,1,17,5,15,10,21,24,27,27,34,36,38,35,47,34,47,27,41,24,33,15,30,7,29,-9,22,-15,34,-23,52,-28,74,-34,72,-39,66,-42,45,-43,38,-38,29,-39,22,-32,18,-29,6,-26,6,-22,3,-19,-10,-19,-19,-17,-37,-16,-48,-15,-60,-14,-68,-17,-75,-15,-88,-18,-95,-16,-99,-11" href="../elevation-profiles/Elevation_Profile-Guatemala-Huehuetenango_ElRancho.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r2_c6','elevation/img/guatemala1_r2_c6_s6.gif','elevation/img/guatemala1_r2_c6_s8.gif','guatemala1_r6_c8','elevation/img/guatemala1_r6_c8_s6.gif','elevation/img/guatemala1_r6_c8_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat3.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r2_c6','elevation/img/guatemala1_r2_c6_s7.gif','guatemala1_r6_c8','elevation/img/guatemala1_r6_c8_s7.gif',1);"  />
+                    <area shape="poly" coords="0,79,11,74,21,65,57,46,56,44,69,42,91,33,116,24,137,14,146,10,153,5,158,-6,177,-21,173,-26,168,-24,146,-8,141,1,119,9,97,20,79,27,65,32,52,33,42,42,22,50,8,59,-1,65,-6,72,-4,76" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r7_c9" id="m_guatemala1_r7_c9">
+                    <area shape="poly" coords="-74,50,-63,45,-53,36,-17,17,-18,15,-5,13,17,4,42,-5,63,-15,72,-19,79,-24,84,-35,103,-50,99,-55,94,-53,72,-37,67,-28,45,-20,23,-9,5,-2,-9,3,-22,4,-32,13,-52,21,-66,30,-75,36,-80,43,-78,47" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r7_c10" id="m_guatemala1_r7_c10">
+                    <area shape="poly" coords="2,0,6,1,11,7,11,16,11,21,22,13,30,11,36,14,34,18,27,23,22,24,15,30,10,30,3,30,2,20,1,10,1,6,0,4,0,2" href="javascript:;" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r7_c10','elevation/img/guatemala1_r7_c10_s6.gif','elevation/img/guatemala1_r7_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat5.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r7_c10','elevation/img/guatemala1_r7_c10_s7.gif',1);"  />
+                    <area shape="poly" coords="-99,50,-88,45,-78,36,-42,17,-43,15,-30,13,-8,4,17,-5,38,-15,47,-19,54,-24,59,-35,78,-50,74,-55,69,-53,47,-37,42,-28,20,-20,-2,-9,-20,-2,-34,3,-47,4,-57,13,-77,21,-91,30,-100,36,-105,43,-103,47" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r7_c11" id="m_guatemala1_r7_c11">
+                    <area shape="poly" coords="-135,50,-124,45,-114,36,-78,17,-79,15,-66,13,-44,4,-19,-5,2,-15,11,-19,18,-24,23,-35,42,-50,38,-55,33,-53,11,-37,6,-28,-16,-20,-38,-9,-56,-2,-70,3,-83,4,-93,13,-113,21,-127,30,-136,36,-141,43,-139,47" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r9_c8" id="m_guatemala1_r9_c8">
+                    <area shape="poly" coords="0,43,11,38,21,29,57,10,56,8,69,6,91,-3,116,-12,137,-22,146,-26,153,-31,158,-42,177,-57,173,-62,168,-60,146,-44,141,-35,119,-27,97,-16,79,-9,65,-4,52,-3,42,6,22,14,8,23,-1,29,-6,36,-4,40" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+                        <map name="m_guatemala1_r10_c10" id="m_guatemala1_r10_c10">
+                    <area shape="poly" coords="-99,20,-88,15,-78,6,-42,-13,-43,-15,-30,-17,-8,-26,17,-35,38,-45,47,-49,54,-54,59,-65,78,-80,74,-85,69,-83,47,-67,42,-58,20,-50,-2,-39,-20,-32,-34,-27,-47,-26,-57,-17,-77,-9,-91,0,-100,6,-105,13,-103,17" href="../elevation-profiles/Elevation_Profile-Guatemala-GuatemalaCity_JctnRioDulce.pdf" target="_blank" alt="" onmouseout="MM_swapImage('guatemala1_r13_c2','','elevation/img/guatemala1_r13_c2.gif',1);MM_nbGroup('out');"  onmouseover="MM_nbGroup('over','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s6.gif','elevation/img/guatemala1_r3_c9_s8.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s6.gif','elevation/img/guatemala1_r5_c12_s8.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s6.gif','elevation/img/guatemala1_r7_c9_s8.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s6.gif','elevation/img/guatemala1_r7_c11_s8.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s6.gif','elevation/img/guatemala1_r9_c8_s8.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s6.gif','elevation/img/guatemala1_r10_c10_s8.gif',1);MM_swapImage('guatemala1_r13_c2','','elevation/stat4.fw.png',1);"  onclick="MM_nbGroup('down','navbar1','guatemala1_r3_c9','elevation/img/guatemala1_r3_c9_s7.gif','guatemala1_r5_c12','elevation/img/guatemala1_r5_c12_s7.gif','guatemala1_r7_c9','elevation/img/guatemala1_r7_c9_s7.gif','guatemala1_r7_c11','elevation/img/guatemala1_r7_c11_s7.gif','guatemala1_r9_c8','elevation/img/guatemala1_r9_c8_s7.gif','guatemala1_r10_c10','elevation/img/guatemala1_r10_c10_s7.gif',1);"  />
+                    </map>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

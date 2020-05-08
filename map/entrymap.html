@@ -1,0 +1,288 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../home-img/iconlogo.ico" />
+
+    <title>America | Map</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(238, 156, 56);
+            background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            background-image: url('../home-img/background.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            color: black !important;
+            font-family: Comic Sans MS !important;
+            font-size: 16px !important;
+        }
+        
+        .container {
+            margin-bottom: 70px
+        }
+        
+        .home {
+            margin-top: 50px;
+        }
+        
+        @media screen and (max-width: 1200px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        @media screen and (min-width: 1490px) {
+            body {
+                background: rgb(238, 156, 56);
+                background: linear-gradient(0deg, rgba(238, 156, 56, 1) 0%, rgba(203, 69, 34, 1) 48%, rgba(116, 40, 42, 1) 100%);
+            }
+        }
+        
+        .mobile {
+            display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .container {
+                margin-bottom: 20px
+            }
+            .home {
+                margin-top: 10px;
+            }
+        }
+        
+        .slide {
+            display: none;
+        }
+        
+        @media screen and (max-width: 450px) {
+            .slide {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 550px) {
+            .scromap {
+                border-radius: 10px;
+                overflow: auto;
+                padding: 10px;
+            }
+        }
+    </style>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <a href="../index.html"><img class="home" src="img_map/home.png"></a> <br> <br>
+                <p class="desktop" style="color: white; margin-top: 30px;">move mouse pointer over the map and click to see fotos and reports of the corresponding country.</p>
+                <p class="mobile" style="color: white;">Click on a county and scroll down to see esimated travel time. Double click to see fotos and reports of the corresponding country.</p>
+                <p class="slide" style="color: white;">
+                    <svg class="bi bi-arrow-left-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 010 .708L5.207 8l2.647 2.646a.5.5 0 01-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M4.5 8a.5.5 0 01.5-.5h6.5a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+                      </svg> Slide
+                    <svg class="bi bi-arrow-right-short" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L10.793 8 8.146 5.354a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 01.5-.5H11a.5.5 0 010 1H4.5A.5.5 0 014 8z" clip-rule="evenodd"/>
+                      </svg>
+
+                </p>
+            </div>
+            <div class="col-lg-5 scromap">
+                <img src="img_map/map.fw.png" usemap="#enewspaper" class="map">
+                <map name="enewspaper">
+
+                  <area  onmouseover = "document.getElementById('country1').style.display = 'block';" onMouseOut="document.getElementById('country1').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="190,216,190,208,195,202,200,196,204,194,218,196,220,189,225,190,230,188,239,193,248,194,253,203,254,212,259,218,263,218,266,211,261,202,257,192,258,186,258,178,265,178,272,172,276,169,277,164,277,158,278,153,270,144,282,143,282,138,277,136,286,133,286,123,283,117,276,117,270,122,263,127,257,133,250,131,246,123,244,117,240,116,237,121,237,128,233,131,228,127,229,122,229,115,232,112,236,110,227,107,218,107,215,103,217,98,211,96,204,95,191,95,183,93,175,94,165,94,144,93,138,92,133,94,106,94,105,99,101,101,97,95,92,95,96,100,98,106,97,110,89,125,91,130,86,138,89,142,87,146,93,150,92,157,93,162,95,167,108,175,108,180,114,180,121,181,126,182,131,186,137,187,144,185,151,185,156,190,159,195,162,199,167,197,171,195,175,199,178,205,179,210,182,213,186,215" href="usa.html">
+                  <area onmouseover = "document.getElementById('country2').style.display = 'block';" onMouseOut="document.getElementById('country2').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}'  coords="190,216,188,220,186,224,186,230,187,237,190,246,191,251,193,255,196,258,202,259,206,257,211,257,216,254,218,250,218,245,220,241,225,239,230,239,234,241,233,247,233,252,231,257,225,260,218,262,217,267,216,270,214,274,213,278,208,276,202,273,196,273,189,273,180,269,173,264,163,260,156,255,153,249,153,244,152,238,150,232,147,227,144,222,140,221,136,215,134,210,130,205,128,200,125,194,123,189,117,187,117,191,119,195,122,200,125,205,127,209,128,213,130,217,131,221,131,226,127,225,124,221,123,216,120,212,116,210,115,206,117,202,114,198,112,194,110,190,107,186,107,181,111,179,117,180,122,181,126,183,130,185,133,186,137,186,140,186,144,185,147,184,151,184,154,186,156,190,158,193,159,197,161,200,164,199,167,197,170,196,173,199,176,201,177,204,179,207,180,211,181,214,184,215" href="mexico.html">
+                  <area  onmouseover = "document.getElementById('country3').style.display = 'block';" onMouseOut="document.getElementById('country3').style.display = 'none';"  shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="224,269,227,272,227,276,225,280,220,284,211,279,213,272,215,267,215,262,218,260,222,260,224,265" href="guatemala.html">
+                  <area  onmouseover = "document.getElementById('country4').style.display = 'block';" onMouseOut="document.getElementById('country4').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="231,257,231,262,230,267,229,272,223,268,221,262,224,258" href="belize.html">
+                  <area onmouseover = "document.getElementById('country5').style.display = 'block';" onMouseOut="document.getElementById('country5').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="226,279,234,285,228,288,222,284" href="elsalvador.html">
+                  <area onmouseover = "document.getElementById('country6').style.display = 'block';" onMouseOut="document.getElementById('country6').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="225,278,229,282,235,286,241,283,250,282,245,272,232,274" href="honduras.html">
+                  <area onmouseover = "document.getElementById('country7').style.display = 'block';" onMouseOut="document.getElementById('country7').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="249,281,251,287,251,293,250,297,244,300,239,296,235,292,236,287,242,284" href="nicaragua.html">
+                  <area onmouseover = "document.getElementById('country8').style.display = 'block';" onMouseOut="document.getElementById('country8').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="250,296,259,303,254,313,237,301,235,293,244,298" href="costarica.html">
+                  <area onmouseover = "document.getElementById('country9').style.display = 'block';" onMouseOut="document.getElementById('country9').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="277,318,284,315,284,308,276,304,267,304,259,303,253,312,262,312,272,313" href="panama.html">
+                  <area onmouseover = "document.getElementById('country10').style.display = 'block';" onMouseOut="document.getElementById('country10').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="283,307,295,304,299,312,296,319,301,324,311,328,316,329,316,337,319,351,311,348,308,357,308,364,302,364,295,364,286,357,277,355,269,349,270,345,276,340,275,329,273,321,279,317,284,314" href="colombia.html">
+                  <area onmouseover = "document.getElementById('country11').style.display = 'block';" onMouseOut="document.getElementById('country11').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="268,347,276,352,284,353,283,362,276,368,269,373,261,373,263,365,260,361,263,352" href="ecuador.html">
+                  <area onmouseover = "document.getElementById('country12').style.display = 'block';" onMouseOut="document.getElementById('country12').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="308,426,310,414,309,402,303,393,295,391,294,382,301,375,307,370,307,364,293,363,286,353,281,360,275,366,269,372,261,374,261,382,265,389,272,397,276,403,278,410,282,415,285,421,294,423,301,429" href="peru.html">
+                  <area onmouseover = "document.getElementById('country13').style.display = 'block';" onMouseOut="document.getElementById('country13').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="317,452,329,452,337,449,340,442,347,439,360,441,357,429,350,424,347,416,341,411,334,410,328,403,324,395,318,398,311,401,310,408,311,419,307,428,309,439" href="bolivia.html">
+                  <area onmouseover = "document.getElementById('country14').style.display = 'block';" onMouseOut="document.getElementById('country14').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="310,427,311,433,311,441,318,453,307,484,307,497,303,519,306,508,299,534,299,550,300,570,299,584,293,594,289,600,289,592,291,581,285,572,293,567,293,557,292,547,289,539,292,526,295,514,299,506,297,489,301,472,304,455,303,441,302,430" href="chile.html">
+                  <area onmouseover = "document.getElementById('country15').style.display = 'block';" onMouseOut="document.getElementById('country15').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' coords="320,626,314,618,313,605,309,600,326,582,318,575,318,570,324,564,328,555,325,549,327,542,340,542,340,532,354,532,361,525,363,516,353,506,356,497,357,488,362,486,367,479,373,473,376,467,372,468,367,473,356,471,357,464,340,453,333,450,331,452,321,452,316,457,312,470,306,485,307,504,304,517,298,544,300,562,300,574,296,588,294,602,301,615" href="argentina.html">
+                  <area onmouseover = "document.getElementById('country16').style.display = 'block';" onMouseOut="document.getElementById('country16').style.display = 'none';" shape="poly" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}'  onmouseover = "document.getElementById('img2').style.display = 'block';" onMouseOut="document.getElementById('img2').style.display = 'none';" coords="108,93,146,95,172,96,203,97,208,96,217,97,226,96,233,96,242,101,249,108,257,110,258,115,255,120,257,126,266,124,279,119,287,115,295,108,292,104,300,93,308,88,315,88,328,86,333,81,307,81,298,73,299,64,305,65,307,59,299,47,291,49,284,49,282,41,277,37,259,35,258,40,261,47,263,53,265,60,259,70,259,76,258,88,249,82,247,71,240,64,232,63,222,60,217,55,205,45,214,29,218,26,226,22,229,17,236,14,242,8,239,3,234,8,227,10,220,9,220,4,208,9,197,8,187,8,176,11,165,8,160,9,153,4,142,4,139,7,130,3,123,5,115,5,107,4,100,3,96,5,93,13,86,19,80,26,73,32,72,38,72,43,79,44,85,43,88,51,91,62,88,68,90,77,94,83,102,90" href="canada.html">
+                  <area onmouseover = "document.getElementById('country17').style.display = 'block';" onMouseOut="document.getElementById('country17').style.display = 'none';" data-maphilight='{"stroke":false,"fillColor":"F68809","fillOpacity":0.70}' shape="poly" onmouseover = "document.getElementById('img1').style.display = 'block';" onMouseOut="document.getElementById('img1').style.display = 'none';" coords="72,45,72,36,97,10,95,2,48,1,41,4,35,7,38,16,16,18,21,25,1,36,5,42,3,48,9,48,8,56,14,56,20,49,31,45,40,39,49,39,56,43,62,46" href="alaska.html">
+                
+                </map>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="box" id="country17">
+                    <img width=" 80px " class="flag " src="flags/usa.png">
+                    <h5 class="ctry "><b>Alaska (USA)</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">June - July 2007</p>
+                </div>
+
+                <div class="box" id="country16">
+                    <img width=" 80px " class="flag " src="flags/canada.png">
+                    <h5 class="ctry "><b>Canada</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">July - August 2007</p>
+                </div>
+
+                <div class="box" id="country1">
+                    <img width=" 80px " class="flag " src="flags/usa.png">
+                    <h5 class="ctry "><b>USA</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">September - October 2007</p>
+                </div>
+
+                <div class="box" id="country2">
+                    <img width=" 80px " class="flag " src="flags/mexico.png">
+                    <h5 class="ctry "><b>Mexico</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">October - November 2007</p>
+                </div>
+
+                <div class="box" id="country3">
+                    <img width=" 80px " class="flag " src="flags/guatemala.png">
+                    <h5 class="ctry "><b>guatemala</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">January 2008</p>
+                </div>
+
+                <div class="box" id="country4">
+                    <img width=" 80px " class="flag " src="flags/belize.png">
+                    <h5 class="ctry "><b>Belize</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">December 2008</p>
+                </div>
+
+                <div class="box" id="country5">
+                    <img width=" 80px " class="flag " src="flags/elsalvador.png">
+                    <h5 class="ctry "><b>El Salvador</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">February 2008</p>
+                </div>
+
+                <div class="box" id="country6">
+                    <img width=" 80px " class="flag " src="flags/honduras.png">
+                    <h5 class="ctry "><b>Honduras</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">February 2008</p>
+                </div>
+
+                <div class="box" id="country7">
+                    <img width=" 80px " class="flag " src="flags/nicaragua.png">
+                    <h5 class="ctry "><b>Nicaragua</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">March 2008</p>
+                </div>
+
+                <div class="box" id="country8">
+                    <img width=" 80px " class="flag " src="flags/costarica.png">
+                    <h5 class="ctry "><b>Costa Rica</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">March - April 2008</p>
+                </div>
+
+                <div class="box" id="country9">
+                    <img width=" 80px " class="flag " src="flags/panama.png">
+                    <h5 class="ctry "><b>Panama</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">April 2008</p>
+                </div>
+
+                <div class="box" id="country10">
+                    <img width=" 80px " class="flag " src="flags/colombia.png">
+                    <h5 class="ctry "><b>Colombia</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">May - June 2008</p>
+                </div>
+
+                <div class="box" id="country11">
+                    <img width=" 80px " class="flag " src="flags/ecuador.png">
+                    <h5 class="ctry "><b>Ecuador</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">July 2008</p>
+                </div>
+
+                <div class="box" id="country12">
+                    <img width=" 80px " class="flag " src="flags/peru.png">
+                    <h5 class="ctry "><b>Peru</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">August - September 2008</p>
+                </div>
+
+                <div class="box" id="country13">
+                    <img width=" 80px " class="flag " src="flags/bolivia.png">
+                    <h5 class="ctry "><b>Bolivia</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">October 2008</p>
+                </div>
+                <div class="box" id="country14">
+                    <img width=" 80px " class="flag " src="flags/chile.png">
+                    <h5 class="ctry "><b>Chile</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">November 08 - February 09</p>
+                </div>
+
+                <div class="box" id="country15">
+                    <img width=" 80px " class="flag " src="flags/argentina.png">
+                    <h5 class="ctry "><b>Argentina</b></h5>
+                    <p class="text ">Our esimated travel time:</p>
+                    <p class="text ">November 08 - February 09</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        .box {
+            display: none;
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            border: 4px solid black;
+            margin-top: 50px;
+        }
+        
+        .flag,
+        .ctry {
+            display: inline;
+        }
+        
+        .text {
+            margin: 0px;
+            padding: 0px;
+            font-weight: bold;
+        }
+    </style>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js "></script>
+
+<script>
+    $(function() {
+        $('.map').maphilight();
+    });
+</script>
+
+</html>
